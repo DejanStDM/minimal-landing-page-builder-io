@@ -23,6 +23,23 @@ export default function Home() {
             View Typography System
           </a>
         </div>
+        <div style={{ marginTop: "2rem" }}>
+          <a
+            href="/design-sistem"
+            className="body-2-medium"
+            style={{
+              color: "var(--Primary-M_Blue)",
+              textDecoration: "none",
+              padding: "12px 24px",
+              border: "1px solid var(--Primary-M_Blue)",
+              borderRadius: "4px",
+              display: "inline-block",
+              transition: "all 0.2s ease",
+            }}
+          >
+            View Design System
+          </a>
+        </div>
       </div>
     </main>
   );
