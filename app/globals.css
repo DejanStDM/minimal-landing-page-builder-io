@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
-  --Neutral-Black: #212121;
-  --Neutral-L_Grey: #89939e;
-  --Neutral-Grey: #717171;
   --Primary-M_Blue: #0671e0;
-  --Neutral-Grey-blue: #abbed1;
+  --Neutral-Grey: #717171;
+  --Neutral-White: #fff;
+  --Neutral-Grey_Blue: #abbed1;
+  --Brand-Primary: #4caf4f;
+  --Shade-S2: #388e3b;
+  --Neutral-Black: #263238;
+  --Neutral-L_Grey: #89939e;
 }
 
 * {
