@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main>
       <div style={{ padding: "2rem", textAlign: "center" }}>
-        <h1 className="headline-1">Welcome to Your Minimal Landing Page</h1>
+        <h1 className="headline-1">Welcome to Your Minimal Landing Page 333 </h1>
         <p className="body-1-regular" style={{ marginTop: "1rem" }}>
           This page is ready for Builder.io integration!
         </p>
