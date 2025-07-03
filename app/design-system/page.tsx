@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 
 const pages = [
-  { name: 'Guide', path: '/design-sistem/guide' },
-  { name: 'Colors', path: '/design-sistem/colors' },
-  { name: 'Typography', path: '/design-sistem/typography' },
-  { name: 'Buttons', path: '/design-sistem/buttons' },
-  { name: 'Effects', path: '/design-sistem/effects' },
-  { name: 'Icons', path: '/design-sistem/icons' },
+  { name: 'Guide', path: '/design-system/guide' },
+  { name: 'Colors', path: '/design-system/colors' },
+  { name: 'Typography', path: '/design-system/typography' },
+  { name: 'Buttons', path: '/design-system/buttons' },
+  { name: 'Effects', path: '/design-system/effects' },
+  { name: 'Icons', path: '/design-system/icons' },
 ];
 
 export default function DesignSistemHome() {

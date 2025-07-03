@@ -25,7 +25,7 @@ export default function Home() {
         </div>
         <div style={{ marginTop: "2rem" }}>
           <a
-            href="/design-sistem"
+            href="/design-system"
             className="body-2-medium"
             style={{
               color: "var(--Primary-M_Blue)",
