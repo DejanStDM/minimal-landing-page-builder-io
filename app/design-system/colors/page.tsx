@@ -34,9 +34,7 @@ const ColorSection: React.FC<ColorSectionProps> = ({
   className = "",
 }) => (
   <div className={`color-section ${className}`}>
-    <h2 className="section-header" style={{ marginBottom: "40px" }}>
-      {title}
-    </h2>
+    <h2 className="section-header">{title}</h2>
     <div className="color-grid">{children}</div>
     <hr className="section-divider" />
   </div>
@@ -45,12 +43,7 @@ const ColorSection: React.FC<ColorSectionProps> = ({
 export default function ColorsPage() {
   return (
     <div className="colors-page">
-      <h1
-        className="headline-2"
-        style={{ textAlign: "center", marginBottom: "120px" }}
-      >
-        Colors
-      </h1>
+      <h1 className="headline-2 colors-title">Colors</h1>
 
       {/* Neutral Colors */}
       <ColorSection title="Neutral">
@@ -108,199 +101,6 @@ export default function ColorsPage() {
         <ColorSwatch color="#E53835" name="Error" hexCode="#E53835" />
         <ColorSwatch color="#2E7D31" name="Success" hexCode="#2E7D31" />
       </ColorSection>
-
-      <style jsx>{`
-        .colors-page {
-          padding: 60px;
-          max-width: 1440px;
-          margin: 0 auto;
-          background-color: #fff;
-        }
-
-        .color-section {
-          margin-bottom: 100px;
-        }
-
-        .last-section {
-          margin-bottom: 0;
-        }
-
-        .color-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-          gap: 32px;
-          max-width: 1320px;
-        }
-
-        .brand-color-group {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 16px;
-        }
-
-        .brand-color-label {
-          font-family: "Inter", sans-serif;
-          font-size: 28px;
-          font-weight: 600;
-          line-height: 36px;
-          letter-spacing: 0.1px;
-          color: var(--Primary-M_Blue);
-          text-align: center;
-        }
-
-        .color-swatch {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 4px;
-          min-width: 88px;
-        }
-
-        .color-preview {
-          width: 88px;
-          height: 88px;
-          border-radius: 10px;
-          flex-shrink: 0;
-        }
-
-        .white-swatch .color-preview {
-          border: 1px solid #abbed1;
-        }
-
-        .color-info {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          width: 88px;
-        }
-
-        .color-name {
-          font-family: "Inter", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 24px;
-          letter-spacing: 0.1px;
-          color: var(--Neutral-L_Grey);
-        }
-
-        .color-hex {
-          font-family: "Inter", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 24px;
-          letter-spacing: 0.1px;
-          color: var(--Neutral-L_Grey);
-        }
-
-        .section-divider {
-          border: none;
-          border-top: 1px solid var(--Neutral-Grey-blue);
-          margin: 60px 0 0 0;
-          width: 100%;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1200px) {
-          .colors-page {
-            padding: 40px;
-          }
-
-          .color-grid {
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 24px;
-          }
-
-          .color-preview {
-            width: 80px;
-            height: 80px;
-          }
-
-          .color-info {
-            width: 80px;
-          }
-
-          .color-swatch {
-            min-width: 80px;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .colors-page {
-            padding: 24px;
-          }
-
-          .color-grid {
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 20px;
-          }
-
-          .color-preview {
-            width: 72px;
-            height: 72px;
-          }
-
-          .color-info {
-            width: 72px;
-          }
-
-          .color-swatch {
-            min-width: 72px;
-          }
-
-          .brand-color-label {
-            font-size: 24px;
-            line-height: 32px;
-          }
-
-          .color-name,
-          .color-hex {
-            font-size: 14px;
-            line-height: 20px;
-          }
-        }
-
-        @media (max-width: 480px) {
-          .colors-page {
-            padding: 16px;
-          }
-
-          .color-grid {
-            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-            gap: 16px;
-          }
-
-          .color-preview {
-            width: 64px;
-            height: 64px;
-          }
-
-          .color-info {
-            width: 64px;
-          }
-
-          .color-swatch {
-            min-width: 64px;
-          }
-
-          .brand-color-label {
-            font-size: 20px;
-            line-height: 28px;
-          }
-
-          .color-name,
-          .color-hex {
-            font-size: 12px;
-            line-height: 16px;
-          }
-
-          .section-header {
-            font-size: 24px;
-            line-height: 32px;
-          }
-        }
-      `}</style>
     </div>
   );
 }
