@@ -1,3 +1,5 @@
+@use "../utils" as utils;
+
 // ==========================================================================
 // BUTTONS
 // ==========================================================================
@@ -6,9 +8,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: $spacing-sm;
+  gap: utils.$spacing-sm;
   border: none;
-  border-radius: $border-radius-sm;
+  border-radius: utils.$border-radius-sm;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   cursor: pointer;
@@ -99,19 +101,19 @@
 
   // Button Sizes
   &--normal {
-    padding: $spacing-md $spacing-lg;
+    padding: utils.$spacing-md utils.$spacing-lg;
     font-size: 18px;
     line-height: 24px;
     min-height: 56px;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: utils.$breakpoint-tablet) {
       padding: 14px 20px;
       font-size: 16px;
       min-height: 48px;
     }
 
-    @media (max-width: $breakpoint-mobile) {
-      padding: 12px $spacing-md;
+    @media (max-width: utils.$breakpoint-mobile) {
+      padding: 12px utils.$spacing-md;
       font-size: 14px;
       min-height: 44px;
     }
@@ -123,26 +125,26 @@
     line-height: 20px;
     min-height: 44px;
 
-    @media (max-width: $breakpoint-tablet) {
-      padding: 10px $spacing-md;
+    @media (max-width: utils.$breakpoint-tablet) {
+      padding: 10px utils.$spacing-md;
       font-size: 14px;
       min-height: 40px;
     }
 
-    @media (max-width: $breakpoint-mobile) {
-      padding: $spacing-sm 12px;
+    @media (max-width: utils.$breakpoint-mobile) {
+      padding: utils.$spacing-sm 12px;
       font-size: 12px;
       min-height: 36px;
     }
   }
 
   &--small {
-    padding: $spacing-sm $spacing-md;
+    padding: utils.$spacing-sm utils.$spacing-md;
     font-size: 14px;
     line-height: 16px;
     min-height: 32px;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: utils.$breakpoint-tablet) {
       padding: 6px 12px;
       font-size: 12px;
       min-height: 28px;
@@ -157,7 +159,7 @@
     }
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: utils.$breakpoint-mobile) {
     gap: 6px;
   }
 }
@@ -168,7 +170,7 @@
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: $border-radius-sm;
+  border-radius: utils.$border-radius-sm;
   cursor: pointer;
   transition: all 0.2s ease;
   background-color: transparent;
@@ -231,12 +233,12 @@
     width: 56px;
     height: 56px;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: utils.$breakpoint-tablet) {
       width: 48px;
       height: 48px;
     }
 
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: utils.$breakpoint-mobile) {
       width: 44px;
       height: 44px;
     }
@@ -246,12 +248,12 @@
     width: 44px;
     height: 44px;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: utils.$breakpoint-tablet) {
       width: 40px;
       height: 40px;
     }
 
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: utils.$breakpoint-mobile) {
       width: 36px;
       height: 36px;
     }
@@ -261,7 +263,7 @@
     width: 32px;
     height: 32px;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: utils.$breakpoint-tablet) {
       width: 28px;
       height: 28px;
     }

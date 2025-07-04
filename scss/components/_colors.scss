@@ -1,23 +1,25 @@
+@use "../utils" as utils;
+
 // ==========================================================================
 // COLOR SYSTEM COMPONENTS
 // ==========================================================================
 
 .colors-page {
-  padding: $spacing-xxl;
-  max-width: $breakpoint-large;
+  padding: utils.$spacing-xxl;
+  max-width: utils.$breakpoint-large;
   margin: 0 auto;
   background-color: var(--Neutral-White);
 
-  @media (max-width: $breakpoint-desktop) {
+  @media (max-width: utils.$breakpoint-desktop) {
     padding: 40px;
   }
 
-  @media (max-width: $breakpoint-tablet) {
-    padding: $spacing-lg;
+  @media (max-width: utils.$breakpoint-tablet) {
+    padding: utils.$spacing-lg;
   }
 
-  @media (max-width: $breakpoint-mobile) {
-    padding: $spacing-md;
+  @media (max-width: utils.$breakpoint-mobile) {
+    padding: utils.$spacing-md;
   }
 }
 
@@ -41,22 +43,22 @@
 .color-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: $spacing-xl;
+  gap: utils.$spacing-xl;
   max-width: 1320px;
 
-  @media (max-width: $breakpoint-desktop) {
+  @media (max-width: utils.$breakpoint-desktop) {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: $spacing-lg;
+    gap: utils.$spacing-lg;
   }
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: utils.$breakpoint-tablet) {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: utils.$breakpoint-mobile) {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: $spacing-md;
+    gap: utils.$spacing-md;
   }
 }
 
@@ -64,7 +66,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: $spacing-md;
+  gap: utils.$spacing-md;
 }
 
 .brand-color-label {
@@ -76,12 +78,12 @@
   color: var(--Primary-M_Blue);
   text-align: center;
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: utils.$breakpoint-tablet) {
     font-size: 24px;
     line-height: 32px;
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: utils.$breakpoint-mobile) {
     font-size: 20px;
     line-height: 28px;
   }
@@ -91,18 +93,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: $spacing-xs;
+  gap: utils.$spacing-xs;
   min-width: 88px;
 
-  @media (max-width: $breakpoint-desktop) {
+  @media (max-width: utils.$breakpoint-desktop) {
     min-width: 80px;
   }
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: utils.$breakpoint-tablet) {
     min-width: 72px;
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: utils.$breakpoint-mobile) {
     min-width: 64px;
   }
 }
@@ -110,20 +112,20 @@
 .color-preview {
   width: 88px;
   height: 88px;
-  border-radius: $border-radius-md;
+  border-radius: utils.$border-radius-md;
   flex-shrink: 0;
 
-  @media (max-width: $breakpoint-desktop) {
+  @media (max-width: utils.$breakpoint-desktop) {
     width: 80px;
     height: 80px;
   }
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: utils.$breakpoint-tablet) {
     width: 72px;
     height: 72px;
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: utils.$breakpoint-mobile) {
     width: 64px;
     height: 64px;
   }
@@ -140,15 +142,15 @@
   text-align: center;
   width: 88px;
 
-  @media (max-width: $breakpoint-desktop) {
+  @media (max-width: utils.$breakpoint-desktop) {
     width: 80px;
   }
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: utils.$breakpoint-tablet) {
     width: 72px;
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: utils.$breakpoint-mobile) {
     width: 64px;
   }
 }
@@ -162,12 +164,12 @@
   letter-spacing: 0.1px;
   color: var(--Neutral-L_Grey);
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: utils.$breakpoint-tablet) {
     font-size: 14px;
     line-height: 20px;
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: utils.$breakpoint-mobile) {
     font-size: 12px;
     line-height: 16px;
   }
@@ -176,6 +178,6 @@
 .section-divider {
   border: none;
   border-top: 1px solid var(--Neutral-Grey_Blue);
-  margin: $spacing-xxl 0 0 0;
+  margin: utils.$spacing-xxl 0 0 0;
   width: 100%;
 }
