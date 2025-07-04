@@ -1,0 +1,62 @@
+// CSS Custom Properties (Variables)
+:root {
+  // Primary Colors
+  --Primary-M_Blue: #0671e0;
+  --Brand-Primary: #4caf4f;
+  --Shade-S2: #388e3b;
+
+  // Neutral Colors
+  --Neutral-White: #fff;
+  --Neutral-Black: #263238;
+  --Neutral-Grey: #717171;
+  --Neutral-L_Grey: #89939e;
+  --Neutral-Grey_Blue: #abbed1;
+}
+
+// SCSS Variables for easier usage
+$primary-blue: var(--Primary-M_Blue);
+$brand-primary: var(--Brand-Primary);
+$brand-dark: var(--Shade-S2);
+
+$neutral-white: var(--Neutral-White);
+$neutral-black: var(--Neutral-Black);
+$neutral-grey: var(--Neutral-Grey);
+$neutral-light-grey: var(--Neutral-L_Grey);
+$neutral-grey-blue: var(--Neutral-Grey_Blue);
+
+// Typography
+$font-family-primary:
+  "Inter",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Roboto",
+  "Oxygen",
+  "Ubuntu",
+  "Cantarell",
+  "Fira Sans",
+  "Droid Sans",
+  "Helvetica Neue",
+  sans-serif;
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;
+$breakpoint-large: 1440px;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 40px;
+$spacing-xxxl: 60px;
+
+// Border Radius
+$border-radius-sm: 6px;
+$border-radius-md: 10px;
+
+// Transitions
+$transition-fast: 0.2s ease;

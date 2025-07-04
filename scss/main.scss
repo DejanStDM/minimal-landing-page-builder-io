@@ -1,0 +1,23 @@
+// 7-1 Pattern - Main SCSS File
+// https://sass-guidelin.es/#the-7-1-pattern
+
+// 1. Vendors
+@import "vendors/vendors";
+
+// 2. Utils/Abstracts
+@import "utils/variables";
+
+// 3. Base
+@import "base/normalize";
+@import "base/fonts";
+@import "base/globals";
+@import "base/typography";
+
+// 4. Layout
+
+// 5. Components
+@import "components/footer";
+
+// 6. Pages
+
+// 7. Themes
