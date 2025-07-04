@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../scss/main.scss";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Minimal Landing Page - Builder.io",
