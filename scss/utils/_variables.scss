@@ -1,0 +1,75 @@
+// ==========================================================================
+// VARIABLES
+// ==========================================================================
+
+// CSS Custom Properties (CSS Variables)
+:root {
+  // Primary Colors
+  --Primary-M_Blue: #0671e0;
+
+  // Neutral Colors
+  --Neutral-Black: #263238;
+  --Neutral-D_Grey: #4d4d4d;
+  --Neutral-Grey: #717171;
+  --Neutral-L_Grey: #89939e;
+  --Neutral-Grey_Blue: #abbed1;
+  --Neutral-Silver: #f5f7fa;
+  --Neutral-White: #fff;
+
+  // Brand Colors
+  --Brand-Primary: #4caf4f;
+  --Brand-Secondary: #263238;
+  --Brand-Info: #2194f3;
+
+  // Shades
+  --Shade-S1: #66bb69;
+  --Shade-S2: #388e3b;
+  --Shade-S3: #2e7d31;
+  --Shade-S4: #1b5e1f;
+  --Shade-S5: #0d3f0e;
+
+  // Tints
+  --Tint-T1: #81c784;
+  --Tint-T2: #a5d6a7;
+  --Tint-T3: #c8e6c9;
+  --Tint-T4: #dcedc8;
+  --Tint-T5: #f1f8e9;
+
+  // Action Colors
+  --Action-Warning: #fbc02d;
+  --Action-Error: #e53e3e;
+  --Action-Success: #68d391;
+}
+
+// SCSS Variables for internal use
+$font-family-base:
+  "Inter",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Roboto",
+  "Oxygen",
+  "Ubuntu",
+  "Cantarell",
+  "Fira Sans",
+  "Droid Sans",
+  "Helvetica Neue",
+  sans-serif;
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;
+$breakpoint-large: 1440px;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 60px;
+
+// Border radius
+$border-radius-sm: 6px;
+$border-radius-md: 10px;

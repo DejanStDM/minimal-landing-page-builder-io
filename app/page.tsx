@@ -1,5 +1,3 @@
-import { Button, ArrowRightIcon } from "./components/Button";
-
 export default function Home() {
   return (
     <main>
@@ -17,23 +15,27 @@ export default function Home() {
             flexWrap: "wrap",
           }}
         >
-          <Button
-            type="primary"
+          <a
             href="/typography"
-            iconRight={<ArrowRightIcon />}
+            className="button button--primary button--normal"
+            style={{ textDecoration: "none" }}
           >
-            View Typography System
-          </Button>
-          <Button
-            type="secondary"
+            <span>View Typography System</span>
+          </a>
+          <a
             href="/design-system"
-            iconRight={<ArrowRightIcon />}
+            className="button button--secondary button--normal"
+            style={{ textDecoration: "none" }}
           >
-            View Design System
-          </Button>
-          <Button type="tertiary" href="/design-system/buttons">
-            View Buttons
-          </Button>
+            <span>View Design System</span>
+          </a>
+          <a
+            href="/design-system/buttons"
+            className="button button--tertiary button--normal"
+            style={{ textDecoration: "none" }}
+          >
+            <span>View Buttons</span>
+          </a>
         </div>
       </div>
     </main>
