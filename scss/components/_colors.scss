@@ -1,0 +1,181 @@
+// ==========================================================================
+// COLOR SYSTEM COMPONENTS
+// ==========================================================================
+
+.colors-page {
+  padding: $spacing-xxl;
+  max-width: $breakpoint-large;
+  margin: 0 auto;
+  background-color: var(--Neutral-White);
+
+  @media (max-width: $breakpoint-desktop) {
+    padding: 40px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: $spacing-lg;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: $spacing-md;
+  }
+}
+
+.colors-title {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.color-section {
+  margin-bottom: 100px;
+
+  &.last-section {
+    margin-bottom: 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: $spacing-xl;
+  max-width: 1320px;
+
+  @media (max-width: $breakpoint-desktop) {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: $spacing-lg;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: $spacing-md;
+  }
+}
+
+.brand-color-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-md;
+}
+
+.brand-color-label {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: var(--Primary-M_Blue);
+  text-align: center;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.color-swatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-xs;
+  min-width: 88px;
+
+  @media (max-width: $breakpoint-desktop) {
+    min-width: 80px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    min-width: 72px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    min-width: 64px;
+  }
+}
+
+.color-preview {
+  width: 88px;
+  height: 88px;
+  border-radius: $border-radius-md;
+  flex-shrink: 0;
+
+  @media (max-width: $breakpoint-desktop) {
+    width: 80px;
+    height: 80px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 72px;
+    height: 72px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.white-swatch .color-preview {
+  border: 1px solid var(--Neutral-Grey_Blue);
+}
+
+.color-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 88px;
+
+  @media (max-width: $breakpoint-desktop) {
+    width: 80px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 72px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 64px;
+  }
+}
+
+.color-name,
+.color-hex {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: var(--Neutral-L_Grey);
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--Neutral-Grey_Blue);
+  margin: $spacing-xxl 0 0 0;
+  width: 100%;
+}

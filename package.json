@@ -4,8 +4,8 @@
   "description": "A minimal landing page built with Builder.io",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run build:css && next dev",
+    "build": "npm run build:css && next build",
     "start": "next start",
     "lint": "next lint",
     "build:css": "sass scss/main.scss public/styles.css --style=compressed",
