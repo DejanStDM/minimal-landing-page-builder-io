@@ -47,14 +47,38 @@ export default function ColorsPage() {
 
       {/* Neutral Colors */}
       <ColorSection title="Neutral">
-        <ColorSwatch color="#263238" name="Black" hexCode="#263238" />
-        <ColorSwatch color="#4D4D4D" name="D_Grey" hexCode="#4D4D4D" />
-        <ColorSwatch color="#717171" name="Grey" hexCode="#717171" />
-        <ColorSwatch color="#89939E" name="L_Grey" hexCode="#89939E" />
-        <ColorSwatch color="#ABBED1" name="Grey-blue" hexCode="#ABBED1" />
-        <ColorSwatch color="#F5F7FA" name="Silver" hexCode="#F5F7FA" />
         <ColorSwatch
-          color="#FFFFFF"
+          color="var(--Neutral-Black)"
+          name="Black"
+          hexCode="#263238"
+        />
+        <ColorSwatch
+          color="var(--Neutral-D_Grey)"
+          name="D_Grey"
+          hexCode="#4D4D4D"
+        />
+        <ColorSwatch
+          color="var(--Neutral-Grey)"
+          name="Grey"
+          hexCode="#717171"
+        />
+        <ColorSwatch
+          color="var(--Neutral-L_Grey)"
+          name="L_Grey"
+          hexCode="#89939E"
+        />
+        <ColorSwatch
+          color="var(--Neutral-Grey_Blue)"
+          name="Grey-blue"
+          hexCode="#ABBED1"
+        />
+        <ColorSwatch
+          color="var(--Neutral-Silver)"
+          name="Silver"
+          hexCode="#F5F7FA"
+        />
+        <ColorSwatch
+          color="var(--Neutral-White)"
           name="White"
           hexCode="#FFFFFF"
           className="white-swatch"
@@ -65,41 +89,65 @@ export default function ColorsPage() {
       <ColorSection title="Brand Colors">
         <div className="brand-color-group">
           <div className="brand-color-label">Primary</div>
-          <ColorSwatch color="#4CAF4F" name="Primary" hexCode="#4CAF4F" />
+          <ColorSwatch
+            color="var(--Brand-Primary)"
+            name="Primary"
+            hexCode="#4CAF4F"
+          />
         </div>
         <div className="brand-color-group">
           <div className="brand-color-label">Secondary</div>
-          <ColorSwatch color="#263238" name="Secondary" hexCode="#263238" />
+          <ColorSwatch
+            color="var(--Brand-Secondary)"
+            name="Secondary"
+            hexCode="#263238"
+          />
         </div>
         <div className="brand-color-group">
           <div className="brand-color-label">Info</div>
-          <ColorSwatch color="#2194F3" name="Info" hexCode="#2194F3" />
+          <ColorSwatch
+            color="var(--Brand-Info)"
+            name="Info"
+            hexCode="#2194F3"
+          />
         </div>
       </ColorSection>
 
       {/* Color Shades */}
       <ColorSection title="Color Shade">
-        <ColorSwatch color="#43A046" name="Shade 1" hexCode="#43A046" />
-        <ColorSwatch color="#388E3B" name="Shade 2" hexCode="#388E3B" />
-        <ColorSwatch color="#237D31" name="Shade 3" hexCode="#237D31" />
-        <ColorSwatch color="#1B5E1F" name="Shade 4" hexCode="#1B5E1F" />
-        <ColorSwatch color="#103E13" name="Shade 5" hexCode="#103E13" />
+        <ColorSwatch color="var(--Shade-S1)" name="Shade 1" hexCode="#43A046" />
+        <ColorSwatch color="var(--Shade-S2)" name="Shade 2" hexCode="#388E3B" />
+        <ColorSwatch color="var(--Shade-S3)" name="Shade 3" hexCode="#237D31" />
+        <ColorSwatch color="var(--Shade-S4)" name="Shade 4" hexCode="#1B5E1F" />
+        <ColorSwatch color="var(--Shade-S5)" name="Shade 5" hexCode="#103E13" />
       </ColorSection>
 
       {/* Color Tints */}
       <ColorSection title="Color Tint">
-        <ColorSwatch color="#66BB69" name="Tint 1" hexCode="#66BB69" />
-        <ColorSwatch color="#81C784" name="Tint 2" hexCode="#81C784" />
-        <ColorSwatch color="#A5D6A7" name="Tint 3" hexCode="#A5D6A7" />
-        <ColorSwatch color="#C8E6C9" name="Tint 4" hexCode="#C8E6C9" />
-        <ColorSwatch color="#E8F5E9" name="Tint 5" hexCode="#E8F5E9" />
+        <ColorSwatch color="var(--Tint-T1)" name="Tint 1" hexCode="#66BB69" />
+        <ColorSwatch color="var(--Tint-T2)" name="Tint 2" hexCode="#81C784" />
+        <ColorSwatch color="var(--Tint-T3)" name="Tint 3" hexCode="#A5D6A7" />
+        <ColorSwatch color="var(--Tint-T4)" name="Tint 4" hexCode="#C8E6C9" />
+        <ColorSwatch color="var(--Tint-T5)" name="Tint 5" hexCode="#E8F5E9" />
       </ColorSection>
 
       {/* Action Colors */}
       <ColorSection title="Action" className="last-section">
-        <ColorSwatch color="#FBC02D" name="Warning" hexCode="#FBC02D" />
-        <ColorSwatch color="#E53835" name="Error" hexCode="#E53835" />
-        <ColorSwatch color="#2E7D31" name="Success" hexCode="#2E7D31" />
+        <ColorSwatch
+          color="var(--Action-Warning)"
+          name="Warning"
+          hexCode="#FBC02D"
+        />
+        <ColorSwatch
+          color="var(--Action-Error)"
+          name="Error"
+          hexCode="#E53835"
+        />
+        <ColorSwatch
+          color="var(--Action-Success)"
+          name="Success"
+          hexCode="#2E7D31"
+        />
       </ColorSection>
     </div>
   );

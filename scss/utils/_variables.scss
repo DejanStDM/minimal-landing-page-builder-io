@@ -6,23 +6,73 @@
   --Shade-S2: #388e3b;
 
   // Neutral Colors
-  --Neutral-White: #fff;
+  --Neutral-White: #ffffff;
   --Neutral-Black: #263238;
+  --Neutral-D_Grey: #4d4d4d;
   --Neutral-Grey: #717171;
   --Neutral-L_Grey: #89939e;
   --Neutral-Grey_Blue: #abbed1;
+  --Neutral-Silver: #f5f7fa;
+
+  // Brand Colors
+  --Brand-Secondary: #263238;
+  --Brand-Info: #2194f3;
+
+  // Color Shades
+  --Shade-S1: #43a046;
+  --Shade-S2: #388e3b;
+  --Shade-S3: #237d31;
+  --Shade-S4: #1b5e1f;
+  --Shade-S5: #103e13;
+
+  // Color Tints
+  --Tint-T1: #66bb69;
+  --Tint-T2: #81c784;
+  --Tint-T3: #a5d6a7;
+  --Tint-T4: #c8e6c9;
+  --Tint-T5: #e8f5e9;
+
+  // Action Colors
+  --Action-Warning: #fbc02d;
+  --Action-Error: #e53835;
+  --Action-Success: #2e7d31;
 }
 
 // SCSS Variables for easier usage
 $primary-blue: var(--Primary-M_Blue);
 $brand-primary: var(--Brand-Primary);
-$brand-dark: var(--Shade-S2);
+$brand-secondary: var(--Brand-Secondary);
+$brand-info: var(--Brand-Info);
 
 $neutral-white: var(--Neutral-White);
 $neutral-black: var(--Neutral-Black);
+$neutral-dark-grey: var(--Neutral-D_Grey);
 $neutral-grey: var(--Neutral-Grey);
 $neutral-light-grey: var(--Neutral-L_Grey);
 $neutral-grey-blue: var(--Neutral-Grey_Blue);
+$neutral-silver: var(--Neutral-Silver);
+
+// Shades
+$shade-s1: var(--Shade-S1);
+$shade-s2: var(--Shade-S2);
+$shade-s3: var(--Shade-S3);
+$shade-s4: var(--Shade-S4);
+$shade-s5: var(--Shade-S5);
+
+// Tints
+$tint-t1: var(--Tint-T1);
+$tint-t2: var(--Tint-T2);
+$tint-t3: var(--Tint-T3);
+$tint-t4: var(--Tint-T4);
+$tint-t5: var(--Tint-T5);
+
+// Actions
+$action-warning: var(--Action-Warning);
+$action-error: var(--Action-Error);
+$action-success: var(--Action-Success);
+
+// Legacy variables (keep for backward compatibility)
+$brand-dark: var(--Shade-S2);
 
 // Typography
 $font-family-primary:
