@@ -37,3 +37,5 @@ The design used for this project is a simple landing page with a design system, 
 ## Notes
 - This project is for testing and demonstration purposes only.
 - The codebase is generated and adapted from the provided Figma file using Builder.io tools.
+
+Just for test 1
