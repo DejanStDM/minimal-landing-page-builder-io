@@ -80,16 +80,6 @@
     }
 
     @media (max-width: utils.$breakpoint-tablet) {
-      gap: utils.$spacing-lg;
-      position: static;
-      transform: none;
-      order: 3;
-      width: 100%;
-      justify-content: center;
-      margin-top: utils.$spacing-sm;
-    }
-
-    @media (max-width: utils.$breakpoint-mobile) {
       position: fixed;
       top: 0;
       left: 0;
@@ -108,7 +98,7 @@
     }
 
     &--open {
-      @media (max-width: utils.$breakpoint-mobile) {
+      @media (max-width: utils.$breakpoint-tablet) {
         transform: translateX(0);
       }
     }
@@ -138,10 +128,6 @@
       }
 
       @media (max-width: utils.$breakpoint-tablet) {
-        font-size: 14px;
-      }
-
-      @media (max-width: utils.$breakpoint-mobile) {
         font-size: 18px;
         padding: utils.$spacing-md 0;
       }
@@ -151,7 +137,7 @@
   &__mobile-actions {
     display: none;
 
-    @media (max-width: utils.$breakpoint-mobile) {
+    @media (max-width: utils.$breakpoint-tablet) {
       display: flex;
       flex-direction: column;
       gap: utils.$spacing-md;
@@ -166,8 +152,8 @@
     gap: 14px;
     flex-shrink: 0;
 
-    @media (max-width: utils.$breakpoint-mobile) {
-      gap: utils.$spacing-sm;
+    @media (max-width: utils.$breakpoint-tablet) {
+      display: none;
     }
   }
 
@@ -195,7 +181,7 @@
     z-index: 1001;
     position: relative;
 
-    @media (max-width: utils.$breakpoint-mobile) {
+    @media (max-width: utils.$breakpoint-tablet) {
       display: flex;
       align-items: center;
       justify-content: center;
