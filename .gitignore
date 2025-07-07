@@ -31,3 +31,5 @@ pnpm-debug.log*
 # generated css files
 public/styles.css
 public/styles.css.map
+app/layout.css
+app/layout.css.map
