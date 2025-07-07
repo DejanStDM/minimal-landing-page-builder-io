@@ -19,9 +19,7 @@ const nextConfig = {
   },
 
   // Improve development server stability
-  experimental: {
-    turbo: false, // Disable Turbopack for better stability in Builder.io environment
-  },
+  experimental: {},
 
   // Headers to handle CORS properly
   async headers() {
