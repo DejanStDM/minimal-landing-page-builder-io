@@ -25,4 +25,10 @@ pnpm-debug.log*
 .vercel/
 
 # vscode
-.vscode/ 
+.vscode/
+
+# Ignore built CSS and source maps
+/app/layout.css
+/app/layout.css.map
+/public/styles.css
+/public/styles.css.map 
