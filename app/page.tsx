@@ -1,6 +1,9 @@
+import { Hero } from "./components/Hero";
+
 export default function Home() {
   return (
     <main>
+      <Hero />
       <div style={{ padding: "2rem", textAlign: "center" }}>
         <h1 className="headline-1">Welcome to Your Minimal Landing Page</h1>
         <p className="body-1-regular" style={{ marginTop: "1rem" }}>
