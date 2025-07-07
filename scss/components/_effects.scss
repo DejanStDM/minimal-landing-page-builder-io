@@ -3,68 +3,92 @@
 // ==========================================================================
 
 .effects-page {
-  padding: 0 $spacing-xxl;
+  padding: 0 60px;
   max-width: 1440px;
   margin: 0 auto;
 
-  @media (max-width: $breakpoint-tablet) {
-    padding: 0 $spacing-lg;
+  @media (max-width: 768px) {
+    padding: 0 24px;
   }
 
-  @media (max-width: $breakpoint-mobile) {
-    padding: 0 $spacing-md;
+  @media (max-width: 480px) {
+    padding: 0 16px;
   }
 }
 
 .effects-title {
   color: var(--Neutral-Black);
   text-align: center;
-  font-family: $font-family-base;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 44px;
-  margin-bottom: $spacing-xxl;
+  margin-bottom: 60px;
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: 768px) {
     font-size: 28px;
     line-height: 36px;
-    margin-bottom: $spacing-xl;
+    margin-bottom: 32px;
   }
 }
 
 .effect-section {
-  margin-bottom: $spacing-xxl;
+  margin-bottom: 60px;
 }
 
 .effect-section-title {
   color: var(--Primary-M_Blue);
-  font-family: $font-family-base;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0.1px;
-  margin-bottom: $spacing-xl;
+  margin-bottom: 32px;
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: 768px) {
     font-size: 24px;
     line-height: 32px;
-    margin-bottom: $spacing-lg;
+    margin-bottom: 24px;
   }
 }
 
 .effects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: $spacing-lg;
+  gap: 24px;
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: 768px) {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: $spacing-md;
+    gap: 16px;
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: 480px) {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: $spacing-sm;
+    gap: 8px;
   }
 }
 
@@ -72,34 +96,46 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: $spacing-sm;
+  gap: 8px;
 }
 
 .shadow-preview {
   width: 100%;
   height: 200px;
-  border-radius: $border-radius-md;
+  border-radius: 10px;
   background: var(--Neutral-White);
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: 768px) {
     height: 160px;
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: 480px) {
     height: 140px;
   }
 }
 
 .shadow-description {
   color: var(--Neutral-L_Grey);
-  font-family: $font-family-base;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.1px;
   align-self: stretch;
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: 480px) {
     font-size: 14px;
     line-height: 20px;
   }
