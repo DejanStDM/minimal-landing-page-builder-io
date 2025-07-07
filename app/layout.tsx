@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./layout.css";
 
 export const metadata: Metadata = {
   title: "Minimal Landing Page - Builder.io",
@@ -13,7 +14,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>{children}</body>
     </html>
