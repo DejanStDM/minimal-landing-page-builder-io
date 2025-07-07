@@ -1,0 +1,96 @@
+// ==========================================================================
+// Spacing Guide Component
+// ==========================================================================
+
+.spacing-guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  &__label {
+    color: var(--Neutral-Grey_Blue);
+    font-family: $font-family-base;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  &__visual {
+    height: 56px;
+    background-color: #d9d9d9;
+    border-radius: 2px;
+  }
+}
+
+.layout-guide {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  &__content {
+    flex: 1;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border: 2px dashed var(--Neutral-L_Grey);
+    border-radius: 8px;
+  }
+
+  &__content-text {
+    color: var(--Neutral-D_Grey);
+    font-family: $font-family-base;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+// Responsive behavior for smaller screens
+@media (max-width: $breakpoint-tablet) {
+  .layout-guide {
+    &__container {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  .spacing-guide {
+    &--margin-left,
+    &--margin-right {
+      align-self: flex-start;
+    }
+
+    &--gutter-left,
+    &--gutter-right {
+      align-self: flex-end;
+    }
+
+    &__visual {
+      width: 100% !important;
+      max-width: 200px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .spacing-guide {
+    &__label {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    &__visual {
+      height: 40px;
+    }
+  }
+}
