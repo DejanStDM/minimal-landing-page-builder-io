@@ -30,8 +30,8 @@ export function Hero({ className = "" }: HeroProps) {
         </div>
         <div className="hero__visual">
           <img
-            src="https://cdn.builder.io/o/assets%2F9cbbb97b27784086a538ac468ac265d8%2F40aafa13c57f462dae3258aed76d9e7d?alt=media&token=73b98b6f-8e0d-4acf-8f93-348cf00c690e&apiKey=9cbbb97b27784086a538ac468ac265d8"
-            alt="Business growth illustration showing a person with laptop and analytics"
+            src="https://cdn.builder.io/api/v1/image/assets%2F9cbbb97b27784086a538ac468ac265d8%2F5ffe54d7dbef47bc985bb524ff171116?format=webp&width=800"
+            alt="Developer illustration showing a programmer working with code, HTML, CSS and development tools"
             className="hero__illustration"
             loading="eager"
           />
