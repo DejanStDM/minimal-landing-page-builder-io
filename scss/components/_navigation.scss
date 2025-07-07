@@ -1,0 +1,180 @@
+@use "../utils" as utils;
+
+// ==========================================================================
+// NAVIGATION
+// ==========================================================================
+
+.navigation {
+  width: 100%;
+  background-color: var(--Neutral-Silver);
+  box-sizing: border-box;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 105px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @media (max-width: utils.$breakpoint-large) {
+      padding: 0 utils.$spacing-xl;
+    }
+
+    @media (max-width: utils.$breakpoint-desktop) {
+      padding: 0 utils.$spacing-lg;
+    }
+
+    @media (max-width: utils.$breakpoint-tablet) {
+      padding: 0 utils.$spacing-md;
+      height: 72px;
+    }
+
+    @media (max-width: utils.$breakpoint-mobile) {
+      padding: 0 utils.$spacing-sm;
+      height: 64px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: utils.$spacing-sm;
+    flex-shrink: 0;
+
+    &-icon {
+      width: 35px;
+      height: 24px;
+
+      @media (max-width: utils.$breakpoint-mobile) {
+        width: 28px;
+        height: 19px;
+      }
+    }
+
+    &-text {
+      width: 111.49px;
+      height: 20.662px;
+      fill: var(--Brand-Secondary);
+
+      @media (max-width: utils.$breakpoint-mobile) {
+        width: 89px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: utils.$breakpoint-desktop) {
+      gap: utils.$spacing-xl;
+    }
+
+    @media (max-width: utils.$breakpoint-tablet) {
+      gap: utils.$spacing-lg;
+      position: static;
+      transform: none;
+      order: 3;
+      width: 100%;
+      justify-content: center;
+      margin-top: utils.$spacing-sm;
+    }
+
+    @media (max-width: utils.$breakpoint-mobile) {
+      display: none; // Hide on mobile, would typically show in a hamburger menu
+    }
+
+    &-item {
+      color: var(--Text-Gray-900);
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      white-space: nowrap;
+
+      &:hover {
+        color: var(--Brand-Primary);
+      }
+
+      &:focus {
+        outline: 2px solid var(--Primary-M_Blue);
+        outline-offset: 2px;
+        border-radius: 2px;
+      }
+
+      &--active {
+        font-weight: 500;
+      }
+
+      @media (max-width: utils.$breakpoint-tablet) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+
+    @media (max-width: utils.$breakpoint-mobile) {
+      gap: utils.$spacing-sm;
+    }
+  }
+
+  &__login-btn {
+    background-color: var(--Neutral-Silver) !important;
+    color: var(--Brand-Primary) !important;
+    border: 1px solid transparent !important;
+
+    &:hover:not(:disabled) {
+      background-color: var(--Brand-Primary) !important;
+      color: var(--Neutral-White) !important;
+    }
+  }
+
+  &__signup-btn {
+    // Uses default primary button styles
+  }
+
+  // Mobile hamburger menu (placeholder for future implementation)
+  &__mobile-menu-toggle {
+    display: none;
+
+    @media (max-width: utils.$breakpoint-mobile) {
+      display: block;
+      background: none;
+      border: none;
+      padding: utils.$spacing-sm;
+      cursor: pointer;
+    }
+  }
+}
+
+// Button size overrides for navigation
+.navigation .button--small {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  min-height: 40px;
+  border-radius: utils.$border-radius-sm;
+
+  @media (max-width: utils.$breakpoint-mobile) {
+    padding: utils.$spacing-sm utils.$spacing-md;
+    font-size: 12px;
+    min-height: 36px;
+  }
+}
