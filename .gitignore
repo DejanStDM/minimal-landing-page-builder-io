@@ -25,4 +25,8 @@ pnpm-debug.log*
 .vercel/
 
 # vscode
-.vscode/ 
+.vscode/
+
+# generated css files
+public/styles.css
+public/styles.css.map
