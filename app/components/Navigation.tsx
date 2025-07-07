@@ -1,9 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "./Button";
 
 export interface NavigationProps {
   className?: string;
 }
+
+const HamburgerIcon = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M3 12H21"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M3 6H21"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M3 18H21"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const CloseIcon = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M18 6L6 18"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M6 6L18 18"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
 
 const NexcentLogo = () => (
   <div className="navigation__logo">
@@ -78,6 +135,8 @@ const NexcentLogo = () => (
 );
 
 export function Navigation({ className = "" }: NavigationProps) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const menuItems = [
     { label: "Home", href: "#", active: true },
     { label: "Service", href: "#" },
@@ -87,21 +146,51 @@ export function Navigation({ className = "" }: NavigationProps) {
     { label: "FAQ", href: "#" },
   ];
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className={`navigation ${className}`}>
       <div className="navigation__container">
         <NexcentLogo />
 
-        <nav className="navigation__menu">
+        <nav
+          className={`navigation__menu ${isMobileMenuOpen ? "navigation__menu--open" : ""}`}
+        >
           {menuItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
               className={`navigation__menu-item ${item.active ? "navigation__menu-item--active" : ""}`}
+              onClick={closeMobileMenu}
             >
               {item.label}
             </a>
           ))}
+
+          <div className="navigation__mobile-actions">
+            <Button
+              type="secondary"
+              size="small"
+              className="navigation__login-btn"
+              onClick={closeMobileMenu}
+            >
+              Login
+            </Button>
+            <Button
+              type="primary"
+              size="small"
+              className="navigation__signup-btn"
+              onClick={closeMobileMenu}
+            >
+              Sign up
+            </Button>
+          </div>
         </nav>
 
         <div className="navigation__actions">
@@ -120,6 +209,15 @@ export function Navigation({ className = "" }: NavigationProps) {
             Sign up
           </Button>
         </div>
+
+        <button
+          className="navigation__mobile-menu-toggle"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle mobile menu"
+          aria-expanded={isMobileMenuOpen}
+        >
+          {isMobileMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
+        </button>
       </div>
     </header>
   );
