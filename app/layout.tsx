@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Navigation } from "./components/Navigation";
 import "./layout.css";
 
 export const metadata: Metadata = {
@@ -13,9 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-      </head>
-      <body>{children}</body>
+      <head></head>
+      <body>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
