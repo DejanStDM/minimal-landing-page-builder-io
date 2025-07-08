@@ -1,41 +1,88 @@
 "use client";
 
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import { Button } from "./Button";
+import heroSlidesData from "../../data/heroSlides.json";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 
 export interface HeroProps {
   className?: string;
 }
 
+interface HeroSlide {
+  id: number;
+  title: {
+    primary: string;
+    accent: string;
+  };
+  subtitle: string;
+  ctaText: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+}
+
 export function Hero({ className = "" }: HeroProps) {
+  const slides: HeroSlide[] = heroSlidesData;
+  const showPagination = slides.length > 1;
+
   return (
     <section className={`hero ${className}`}>
       <div className="hero__container">
-        <div className="hero__content">
-          <div className="hero__text">
-            <h1 className="hero__heading">
-              <span className="hero__heading-primary">
-                Lessons and insights{" "}
-              </span>
-              <span className="hero__heading-accent">from 8 years</span>
-            </h1>
-            <p className="hero__subtitle">
-              Where to grow your business as a photographer: site or social
-              media?
-            </p>
-          </div>
-          <Button type="primary" size="medium" className="hero__cta">
-            Register
-          </Button>
-        </div>
-        <div className="hero__visual">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F9cbbb97b27784086a538ac468ac265d8%2F5ffe54d7dbef47bc985bb524ff171116?format=webp&width=800"
-            alt="Developer illustration showing a programmer working with code, HTML, CSS and development tools"
-            className="hero__illustration"
-            loading="eager"
-          />
-        </div>
+        <Swiper
+          modules={[Pagination]}
+          spaceBetween={0}
+          slidesPerView={1}
+          pagination={
+            showPagination
+              ? {
+                  clickable: true,
+                  el: ".hero__pagination",
+                  bulletClass: "hero__pagination-bullet",
+                  bulletActiveClass: "hero__pagination-bullet--active",
+                }
+              : false
+          }
+          className="hero__slider"
+        >
+          {slides.map((slide) => (
+            <SwiperSlide key={slide.id}>
+              <div className="hero__slide">
+                <div className="hero__content">
+                  <div className="hero__text">
+                    <h1 className="hero__heading">
+                      <span className="hero__heading-primary">
+                        {slide.title.primary}{" "}
+                      </span>
+                      <span className="hero__heading-accent">
+                        {slide.title.accent}
+                      </span>
+                    </h1>
+                    <p className="hero__subtitle">{slide.subtitle}</p>
+                  </div>
+                  <Button type="primary" size="medium" className="hero__cta">
+                    {slide.ctaText}
+                  </Button>
+                </div>
+                <div className="hero__visual">
+                  <img
+                    src={slide.image.src}
+                    alt={slide.image.alt}
+                    className="hero__illustration"
+                    loading={slide.id === 1 ? "eager" : "lazy"}
+                  />
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        {showPagination && <div className="hero__pagination"></div>}
       </div>
     </section>
   );

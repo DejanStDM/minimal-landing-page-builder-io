@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "primary": "Lessons and insights",
+      "accent": "from 8 years"
+    },
+    "subtitle": "Where to grow your business as a photographer: site or social media?",
+    "ctaText": "Register",
+    "image": {
+      "src": "https://cdn.builder.io/api/v1/image/assets%2F9cbbb97b27784086a538ac468ac265d8%2F5ffe54d7dbef47bc985bb524ff171116?format=webp&width=800",
+      "alt": "Developer illustration showing a programmer working with code, HTML, CSS and development tools"
+    }
+  },
+  {
+    "id": 2,
+    "title": {
+      "primary": "Building successful",
+      "accent": "digital products"
+    },
+    "subtitle": "Learn the essential strategies for creating products that users love and businesses need.",
+    "ctaText": "Get Started",
+    "image": {
+      "src": "https://cdn.builder.io/api/v1/image/assets%2F9cbbb97b27784086a538ac468ac265d8%2F1901cb0d077a40e29b4f2d19808ae5e3?format=webp&width=800",
+      "alt": "Digital product design illustration"
+    }
+  },
+  {
+    "id": 3,
+    "title": {
+      "primary": "Scale your team",
+      "accent": "efficiently"
+    },
+    "subtitle": "Discover proven methods to build and manage high-performing development teams.",
+    "ctaText": "Learn More",
+    "image": {
+      "src": "https://cdn.builder.io/api/v1/image/assets%2F9cbbb97b27784086a538ac468ac265d8%2F5ffe54d7dbef47bc985bb524ff171116?format=webp&width=800",
+      "alt": "Team collaboration illustration"
+    }
+  }
+]
