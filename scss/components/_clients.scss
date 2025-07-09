@@ -1,0 +1,113 @@
+// ==========================================================================
+// Clients Component
+// ==========================================================================
+
+@use "../utils" as *;
+
+.clients {
+  display: flex;
+  width: 100%;
+  padding: $spacing-xxl 0;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: $spacing-xxl $spacing-xl;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: $spacing-xxl 144px;
+  }
+
+  &__container {
+    display: flex;
+    width: 100%;
+    max-width: 1110px;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-md;
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-sm;
+    text-align: center;
+  }
+
+  &__title {
+    color: var(--Neutral-D_Grey);
+    font-family: $font-family-base;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 32px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  &__description {
+    color: var(--Neutral-Grey);
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    height: 98px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: $spacing-md;
+    flex-wrap: wrap;
+
+    @media (min-width: $breakpoint-tablet) {
+      flex-wrap: nowrap;
+      gap: $spacing-lg;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      gap: $spacing-xl;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border-radius-sm;
+    flex-shrink: 0;
+
+    svg,
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
