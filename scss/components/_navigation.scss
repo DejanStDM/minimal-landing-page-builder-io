@@ -45,9 +45,10 @@
     gap: utils.$spacing-sm;
     flex-shrink: 0;
 
-    &-icon {
-      width: 35px;
-      height: 24px;
+    &-img {
+      width: 150px;
+      height: auto;
+      object-fit: contain;
 
       @media (max-width: utils.$breakpoint-mobile) {
         width: 28px;
