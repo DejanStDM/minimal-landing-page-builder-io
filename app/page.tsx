@@ -3,6 +3,7 @@ import { Clients } from "./components/Clients";
 import { Community } from "./components/Community";
 import { Achievements } from "./components/Achievements";
 import { Unlock } from "./components/Unlock";
+import { UnlockFooter } from "./components/UnlockFooter";
 
 export default function Home() {
   return (
@@ -10,8 +11,9 @@ export default function Home() {
       <Hero />
       <Clients />
       <Community />
-      <Achievements />
       <Unlock />
+      <Achievements />
+      <UnlockFooter />
     </main>
   );
 }
