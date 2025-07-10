@@ -1,0 +1,190 @@
+@use "../utils" as *;
+
+.customer {
+  width: 100%;
+  padding: 32px 0;
+  background: $neutral-silver;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 78px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  &__image-wrap {
+    flex-shrink: 0;
+
+    @include mobile {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__image {
+    width: 326px;
+    height: 326px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
+    object-fit: cover;
+
+    @include mobile {
+      width: 280px;
+      height: 280px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex: 1;
+  }
+
+  &__testimonial-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__testimonial {
+    color: $neutral-grey;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__name {
+    color: $brand-primary;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__organization {
+    color: $neutral-l-grey;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 24px;
+      align-items: flex-start;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+
+    @include mobile {
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: $neutral-silver;
+
+    &--primary {
+      background: $tint-t5;
+    }
+
+    svg {
+      width: auto;
+      height: auto;
+      max-width: 40px;
+      max-height: 40px;
+    }
+
+    img {
+      width: auto;
+      height: auto;
+      max-width: 40px;
+      max-height: 40px;
+    }
+
+    @include mobile {
+      width: 40px;
+      height: 40px;
+
+      svg,
+      img {
+        max-width: 32px;
+        max-height: 32px;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__link-text {
+    color: $brand-primary;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
