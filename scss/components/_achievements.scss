@@ -87,8 +87,7 @@
   }
 }
 
-.achievements__stats > div:first-child,
-.achievements__stats > div:last-child {
+.achievements__stats-row {
   display: flex;
   align-items: center;
   gap: 30px;
