@@ -26,17 +26,36 @@ export function Achievements({ className = "" }: { className?: string }) {
             </p>
           </div>
           <div className="achievements__stats">
-            {stats.map((stat, idx) => (
-              <div className="achievements__stat" key={idx}>
-                <div className="achievements__stat-icon">
-                  <img src={stat.icon} alt={`${stat.label} icon`} />
+            <div className="achievements__stats-row">
+              {stats.slice(0, 2).map((stat, idx) => (
+                <div className="achievements__stat" key={idx}>
+                  <div className="achievements__stat-icon">
+                    <img src={stat.icon} alt={`${stat.label} icon`} />
+                  </div>
+                  <div className="achievements__stat-details">
+                    <div className="achievements__stat-number">
+                      {stat.number}
+                    </div>
+                    <div className="achievements__stat-label">{stat.label}</div>
+                  </div>
                 </div>
-                <div className="achievements__stat-details">
-                  <div className="achievements__stat-number">{stat.number}</div>
-                  <div className="achievements__stat-label">{stat.label}</div>
+              ))}
+            </div>
+            <div className="achievements__stats-row">
+              {stats.slice(2, 4).map((stat, idx) => (
+                <div className="achievements__stat" key={idx + 2}>
+                  <div className="achievements__stat-icon">
+                    <img src={stat.icon} alt={`${stat.label} icon`} />
+                  </div>
+                  <div className="achievements__stat-details">
+                    <div className="achievements__stat-number">
+                      {stat.number}
+                    </div>
+                    <div className="achievements__stat-label">{stat.label}</div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
