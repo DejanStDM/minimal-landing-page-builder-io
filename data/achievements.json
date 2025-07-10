@@ -1,0 +1,26 @@
+{
+  "title": "Helping a local business reinvent itself",
+  "description": "We reached here with our hard work and dedication",
+  "stats": [
+    {
+      "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/39f07658c28f2618890c9da05ca93f10053abc27?width=96",
+      "number": "2,245,341",
+      "label": "Members"
+    },
+    {
+      "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/faae0d9b40a51943cda7e64376462664c08aaf03?width=96",
+      "number": "46,328",
+      "label": "Clubs"
+    },
+    {
+      "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/6e3704335f55bd8af984690f5d54c59d755924e1?width=96",
+      "number": "828,867",
+      "label": "Event Bookings"
+    },
+    {
+      "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/c7f39ca7a96f31f8b3fc313b3b4341c9032760e6?width=96",
+      "number": "1,926,436",
+      "label": "Payments"
+    }
+  ]
+}

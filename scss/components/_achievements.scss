@@ -1,0 +1,167 @@
+@use "../utils" as *;
+
+// ==========================================================================
+// ACHIEVEMENTS COMPONENT
+// ==========================================================================
+
+.achievements__sec {
+  background-color: var(--Neutral-Silver);
+  padding: 64px 0;
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 48px 0;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 32px 0;
+  }
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+  @media (max-width: $breakpoint-desktop) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    gap: 32px;
+  }
+}
+
+.achievements__content {
+  flex: 0 0 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  @media (max-width: $breakpoint-desktop) {
+    flex: none;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.achievements__title {
+  color: var(--Neutral-D_Grey);
+  text-align: left;
+  margin-bottom: 0;
+
+  span {
+    color: var(--Brand-Primary);
+  }
+
+  @media (max-width: $breakpoint-desktop) {
+    text-align: center;
+  }
+}
+
+.achievements__description {
+  color: var(--Text-Gray-900);
+  align-self: stretch;
+
+  @media (max-width: $breakpoint-desktop) {
+    text-align: center;
+  }
+}
+
+.achievements__stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  @media (max-width: $breakpoint-desktop) {
+    width: 100%;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    gap: 32px;
+  }
+}
+
+.achievements__stats-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    gap: 20px;
+  }
+}
+
+.achievements__stat {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
+
+.achievements__stat-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.achievements__stat-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (max-width: $breakpoint-mobile) {
+    align-items: center;
+  }
+}
+
+.achievements__stat-number {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--Neutral-D_Grey);
+  width: 191px;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: auto;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.achievements__stat-label {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--Neutral-Grey);
+  width: 191px;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: auto;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
