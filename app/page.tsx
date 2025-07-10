@@ -4,6 +4,7 @@ import { Community } from "./components/Community";
 import { Achievements } from "./components/Achievements";
 import { Unlock } from "./components/Unlock";
 import { UnlockFooter } from "./components/UnlockFooter";
+import { Customer } from "./components/Customer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Unlock />
       <Achievements />
       <UnlockFooter />
+      <Customer />
     </main>
   );
 }
