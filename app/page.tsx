@@ -6,6 +6,7 @@ import { Unlock } from "./components/Unlock";
 import { UnlockFooter } from "./components/UnlockFooter";
 import { Customer } from "./components/Customer";
 import { CommunityUpdates } from "./components/CommunityUpdates";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <UnlockFooter />
       <Customer />
       <CommunityUpdates />
+      <Footer />
     </main>
   );
 }
