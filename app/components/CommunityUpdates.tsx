@@ -33,7 +33,7 @@ export function CommunityUpdates({ className = "" }: { className?: string }) {
                 />
               </div>
               <div className="community-updates__content">
-                <h3 className="community-updates__card-title">
+                <h3 className="headline-5 community-updates__card-title">
                   {article.title}
                 </h3>
                 <div className="community-updates__link">
@@ -59,11 +59,7 @@ export function CommunityUpdates({ className = "" }: { className?: string }) {
             </div>
           ))}
         </div>
-        <div className="community-updates__dots">
-          <div className="community-updates__dot community-updates__dot--active"></div>
-          <div className="community-updates__dot"></div>
-          <div className="community-updates__dot"></div>
-        </div>
+        
       </div>
     </section>
   );

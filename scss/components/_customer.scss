@@ -6,14 +6,14 @@
   background: var(--Neutral-Silver);
 
   &__wrapper {
-    display: flex;
-    align-items: center;
-    gap: 78px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+   gap: 36px;
+ 
 
-    @include mobile {
-      flex-direction: column;
-      gap: 32px;
-    }
+   @media (max-width: $breakpoint-tablet) {
+    display: block;
+   }
   }
 
   &__image-wrap {
@@ -27,8 +27,10 @@
   }
 
   &__image {
-    width: 326px;
-    height: 326px;
+    // width: 326px;
+    // height: 326px;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
     object-fit: cover;
@@ -40,16 +42,13 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    flex: 1;
+    
   }
 
   &__testimonial-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 16px;
   }
 
   &__testimonial {
@@ -59,6 +58,7 @@
     font-weight: 500;
     line-height: 24px;
     margin: 0;
+    margin-bottom: 16px;
 
     @include mobile {
       font-size: 14px;
@@ -67,9 +67,7 @@
   }
 
   &__info {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+   margin-bottom: 16px;
   }
 
   &__name {
@@ -116,11 +114,9 @@
     display: flex;
     align-items: center;
     gap: 41px;
+    flex-wrap: wrap;
 
-    @include mobile {
-      gap: 24px;
-      flex-wrap: wrap;
-    }
+   
   }
 
   &__logo {
@@ -182,9 +178,6 @@
     font-weight: 600;
     line-height: 28px;
 
-    @include mobile {
-      font-size: 18px;
-      line-height: 24px;
-    }
+    
   }
 }
