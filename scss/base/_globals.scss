@@ -1,4 +1,4 @@
-@use "../utils" as utils;
+@use "../utils" as *;
 // ==========================================================================
 // GLOBAL STYLES
 // ==========================================================================
@@ -12,3 +12,30 @@ body {
     color: var(--Neutral-Black);  
     background-color: white;
 }
+
+// Section Container (Bootstrap-like)
+.sec__container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (max-width: $breakpoint-large) {
+    padding-left: $spacing-xl;
+    padding-right: $spacing-xl;
+  }
+  @media (max-width: $breakpoint-desktop) {
+    padding-left: $spacing-lg;
+    padding-right: $spacing-lg;
+  }
+  @media (max-width: $breakpoint-tablet) {
+    padding-left: $spacing-md;
+    padding-right: $spacing-md;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    padding-left: $spacing-md;
+    padding-right: $spacing-md;
+  }
+}    

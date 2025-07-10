@@ -1,0 +1,99 @@
+@use "../utils" as *;
+.community {
+  // width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // gap: 32px;
+  // padding: 0 144px;
+  
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    // moved styles to .community .sec__title
+  }
+
+  &__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #717171;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    max-width: 1440px;
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+
+  &__card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 32px;
+    width: 299px;
+    gap: 16px;
+  }
+
+  &__icon-wrap {
+
+    border-radius: 18px 5px 10px 5px;
+    width: 65px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  &__card-title {
+    // moved styles to .community .sec__title
+  }
+
+  &__card-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+} 
+.community .sec__title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #4D4D4D;
+  text-align: center;
+  margin: 0;
+} 

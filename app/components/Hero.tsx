@@ -34,7 +34,7 @@ export function Hero({ className = "" }: HeroProps) {
 
   return (
     <section className={`hero ${className}`}>
-      <div className="hero__container">
+      <div className="sec__container">
         <Swiper
           modules={[Pagination]}
           spaceBetween={0}
@@ -56,7 +56,7 @@ export function Hero({ className = "" }: HeroProps) {
               <div className="hero__slide">
                 <div className="hero__content">
                   <div className="hero__text">
-                    <h1 className="hero__heading">
+                    <h1 className="headline-1 sec__title">
                       <span className="hero__heading-primary">
                         {slide.title.primary}{" "}
                       </span>

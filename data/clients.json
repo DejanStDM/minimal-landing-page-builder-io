@@ -1,0 +1,13 @@
+{
+  "title": "Our Clients",
+  "description": "We have been working with some Fortune 500+ clients",
+  "logos": [
+    "/images/clients/logo1.svg",
+    "/images/clients/logo2.svg",
+    "/images/clients/logo3.svg",
+    "/images/clients/logo4.svg",
+    "/images/clients/logo5.svg",
+    "/images/clients/logo6.svg",
+    "/images/clients/logo7.svg"
+  ]
+} 

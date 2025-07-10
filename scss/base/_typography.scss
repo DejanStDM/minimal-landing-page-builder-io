@@ -1,4 +1,4 @@
-@use "../utils" as utils;
+@use "../utils" as *;
 
 // ==========================================================================
 // TYPOGRAPHY
@@ -9,17 +9,15 @@
   font-family: "Inter", sans-serif;
   font-size: 64px;
   font-weight: 600;
-  line-height: 76px;
+  line-height: 1.2;
   color: var(--Neutral-Black);
 
-  @media (max-width: utils.$breakpoint-tablet) {
+  @media (max-width: $breakpoint-tablet) {
     font-size: 48px;
-    line-height: 56px;
   }
 
-  @media (max-width: utils.$breakpoint-mobile) {
+  @media (max-width: $breakpoint-mobile) {
     font-size: 36px;
-    line-height: 44px;
   }
 }
 
@@ -27,17 +25,15 @@
   font-family: "Inter", sans-serif;
   font-size: 36px;
   font-weight: 600;
-  line-height: 44px;
+  line-height: 1.2;
   color: var(--Neutral-Black);
 
-  @media (max-width: utils.$breakpoint-tablet) {
+  @media (max-width: $breakpoint-tablet) {
     font-size: 32px;
-    line-height: 40px;
   }
 
-  @media (max-width: utils.$breakpoint-mobile) {
+  @media (max-width: $breakpoint-mobile) {
     font-size: 28px;
-    line-height: 36px;
   }
 }
 
@@ -48,7 +44,7 @@
   line-height: 36px;
   color: var(--Neutral-Black);
 
-  @media (max-width: utils.$breakpoint-tablet) {
+  @media (max-width: $breakpoint-tablet) {
     font-size: 24px;
     line-height: 32px;
   }
@@ -155,4 +151,16 @@
   line-height: 28px;
   letter-spacing: 0.1px;
   color: var(--Neutral-Grey);
+}
+
+// Section Title (shared for main app)
+.sec__title {
+  display: block;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.sec__sub-title{
+  display: block;
+  margin-bottom: 15px;
+  text-align: center;
 }
