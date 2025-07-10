@@ -123,11 +123,13 @@
     z-index: 2;
     margin-top: -96px;
     width: 100%;
+    min-height: 120px;
 
     @include mobile {
       margin-top: -64px;
       padding: 12px;
       gap: 12px;
+      min-height: 100px;
     }
   }
 
