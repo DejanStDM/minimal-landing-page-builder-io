@@ -19,7 +19,7 @@ export function Achievements({ className = "" }: { className?: string }) {
         <div className="achievements">
           <div className="achievements__content">
             <h2 className="headline-2 sec__title achievements__title">
-              {title}
+              Helping a local <span>business reinvent itself</span>
             </h2>
             <p className="body-2-regular achievements__description">
               {description}
