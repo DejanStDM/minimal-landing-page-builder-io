@@ -78,42 +78,6 @@ export default function DesignSistemHome() {
           </div>
         ))}
       </div>
-
-      {/* Quick Demo Section */}
-      <div
-        style={{
-          marginTop: "80px",
-          padding: "32px",
-          backgroundColor: "#f8f9fa",
-          borderRadius: "12px",
-          textAlign: "center",
-        }}
-      >
-        <h3 className="headline-4" style={{ marginBottom: "16px" }}>
-          Quick Demo
-        </h3>
-        <p
-          className="body-2-regular"
-          style={{ marginBottom: "24px", color: "var(--Neutral-Grey)" }}
-        >
-          Try out some components from our design system
-        </p>
-        <div
-          style={{
-            display: "flex",
-            gap: "16px",
-            justifyContent: "center",
-            flexWrap: "wrap",
-          }}
-        >
-          <Button type="primary">Primary Button</Button>
-          <Button type="secondary">Secondary Button</Button>
-          <Button type="tertiary">Tertiary Button</Button>
-          <Button type="primary" size="small">
-            Small Button
-          </Button>
-        </div>
-      </div>
     </div>
   );
 }
