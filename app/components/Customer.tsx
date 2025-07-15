@@ -1,5 +1,6 @@
 import React from "react";
 import customerData from "../../data/customer.json";
+import { Button, Link } from "./Button";
 
 export function Customer({ className = "" }: { className?: string }) {
   const {
@@ -8,12 +9,14 @@ export function Customer({ className = "" }: { className?: string }) {
     organization,
     customerImage,
     meetAllCustomersText,
+    meetAllCustomersUrl,
   } = customerData as {
     testimonial: string;
     customerName: string;
     organization: string;
     customerImage: string;
     meetAllCustomersText: string;
+    meetAllCustomersUrl: string;
   };
 
   return (
@@ -131,23 +134,33 @@ export function Customer({ className = "" }: { className?: string }) {
                 </div>
               </div>
               <div className="customer__link">
-                <span className="customer__link-text">
+              <Link size="normal" href={meetAllCustomersUrl}>
                   {meetAllCustomersText}
-                </span>
-                <svg
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16 16.3989L19.2929 13.106C19.6834 12.7155 19.6834 12.0823 19.2929 11.6918L16 8.39893M19 12.3989L5 12.3989"
-                    stroke="#4CAF4F"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                  />
-                </svg>
+                  <span className="link__icon">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 16.3989L19.2929 13.106C19.6834 12.7155 19.6834 12.0823 19.2929 11.6918L16 8.39893M19 12.3989L5 12.3989"
+                        stroke="#4CAF4F"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </span>
+              </Link>
+
+
+                  {/* <Button type="secondary" size="medium" className="customer__link" href={meetAllCustomersUrl}>
+                  <span className="button-icon">
+                    {meetAllCustomersText}
+                  </span>
+                 
+                </Button> */}
               </div>
             </div>
           </div>

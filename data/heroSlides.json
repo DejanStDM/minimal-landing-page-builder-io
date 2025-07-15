@@ -7,6 +7,7 @@
     },
     "subtitle": "Where to grow your business as a photographer: site or social media?",
     "ctaText": "Register",
+    "ctaHref": "#",
     "image": {
       "src": "/images/hero/slide1.webp",
       "alt": "Developer illustration showing a programmer working with code, HTML, CSS and development tools"
@@ -20,6 +21,7 @@
     },
     "subtitle": "Learn the essential strategies for creating products that users love and businesses need.",
     "ctaText": "Get Started",
+    "ctaHref": "#",
     "image": {
       "src": "/images/hero/slide2.webp",
       "alt": "Digital product design illustration"
@@ -33,6 +35,7 @@
     },
     "subtitle": "Discover proven methods to build and manage high-performing development teams.",
     "ctaText": "Learn More",
+    "ctaHref": "#",
     "image": {
       "src": "/images/hero/slide3.webp",
       "alt": "Team collaboration illustration"

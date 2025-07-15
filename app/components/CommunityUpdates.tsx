@@ -1,5 +1,6 @@
 import React from "react";
 import communityUpdatesData from "../../data/communityUpdates.json";
+import { Link } from "./Button";
 
 export function CommunityUpdates({ className = "" }: { className?: string }) {
   const { sectionTitle, description, articles } = communityUpdatesData as {
@@ -10,6 +11,7 @@ export function CommunityUpdates({ className = "" }: { className?: string }) {
       image: string;
       title: string;
       readMoreText: string;
+      url: string;
     }>;
   };
 
@@ -36,10 +38,12 @@ export function CommunityUpdates({ className = "" }: { className?: string }) {
                 <h3 className="headline-5 community-updates__card-title">
                   {article.title}
                 </h3>
-                <div className="community-updates__link">
+                <Link href={article.url} className="community-updates__link">
                   <span className="community-updates__link-text">
                     {article.readMoreText}
                   </span>
+                  <span className="link__icon"> 
+
                   <svg
                     width="25"
                     height="25"
@@ -54,7 +58,8 @@ export function CommunityUpdates({ className = "" }: { className?: string }) {
                       strokeLinecap="round"
                     />
                   </svg>
-                </div>
+                  </span>
+                </Link>
               </div>
             </div>
           ))}

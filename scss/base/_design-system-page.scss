@@ -1,0 +1,76 @@
+.design-system-page {
+  background: #f8fafc;
+  min-height: 100vh;
+  padding: 48px 0 64px 0;
+}
+
+.design-system-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.design-system-header {
+  margin-bottom: 48px;
+  text-align: left;
+  border-bottom: 1.5px solid #e5e7eb;
+  padding-bottom: 24px;
+}
+
+.design-system-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.design-system-description {
+  font-size: 1.15rem;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+.design-system-section {
+  margin-bottom: 64px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px 0 rgba(30,41,59,0.06);
+  padding: 32px 32px 24px 32px;
+  border: 1px solid #e5e7eb;
+  &-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+    opacity: 1;
+  }
+  &-description {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+}
+
+.design-system-example {
+  margin: 24px 0 0 0;
+  padding: 24px;
+  background: #f1f5f9;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.design-system-guidelines {
+  margin-top: 40px;
+  &-item {
+    margin-bottom: 40px;
+    background: #f9fafb;
+    border-radius: 10px;
+    padding: 20px 24px;
+    border: 1px solid #e5e7eb;
+    ul {
+      margin-left: 20px;
+    }
+  }
+}

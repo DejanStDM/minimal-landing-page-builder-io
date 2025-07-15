@@ -280,7 +280,11 @@
 
 // Link Component Styles
 .link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: utils.$spacing-sm;
+  white-space: nowrap;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: var(--Brand-Primary);
@@ -288,6 +292,12 @@
   cursor: pointer;
   transition: all 0.2s ease;
   position: relative;
+
+  &__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
 
   &:hover:not(.link--disabled) {
     color: var(--Brand-Primary);

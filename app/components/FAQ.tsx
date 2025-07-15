@@ -108,6 +108,7 @@ export function FAQ({
 
   return (
     <div className={classes}>
+     
       {items.map((item) => (
         <FAQAccordionItem
           key={item.id}
@@ -117,6 +118,7 @@ export function FAQ({
         />
       ))}
     </div>
+   
   );
 }
 

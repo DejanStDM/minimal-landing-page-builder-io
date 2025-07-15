@@ -78,6 +78,7 @@ export default function FAQPage() {
         <section className="design-system-section">
           <h2 className="design-system-section-title">Usage Guidelines</h2>
           <div className="design-system-guidelines">
+            <div className="design-system-guidelines-item">
             <h3>When to Use</h3>
             <ul>
               <li>For frequently asked questions on support pages</li>
@@ -87,6 +88,8 @@ export default function FAQPage() {
                 To reduce page clutter while maintaining content accessibility
               </li>
             </ul>
+               </div>
+            <div className="design-system-guidelines-item">
 
             <h3>Accessibility Features</h3>
             <ul>
@@ -98,7 +101,10 @@ export default function FAQPage() {
               </li>
               <li>High contrast mode compatibility</li>
             </ul>
+            </div>
 
+
+            <div className="design-system-guidelines-item">
             <h3>Props</h3>
             <div className="design-system-props">
               <div className="prop-item">
@@ -118,6 +124,10 @@ export default function FAQPage() {
               </div>
             </div>
 
+            </div>
+
+            <div className="design-system-guidelines-item">
+              
             <h3>Code Example</h3>
             <pre className="design-system-code">
               {`import { FAQ } from "./components/FAQ";
@@ -133,6 +143,7 @@ export function FAQSection() {
   );
 }`}
             </pre>
+            </div>
           </div>
         </section>
       </div>

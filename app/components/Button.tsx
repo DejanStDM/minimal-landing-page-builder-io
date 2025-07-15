@@ -224,8 +224,8 @@ export function Button({
 
   if (href && !disabled) {
     return (
-      <a href={href} className={classes} {...props}>
-        {content}
+      <a  href={href} className={classes} {...props}>
+        {children}
       </a>
     );
   }

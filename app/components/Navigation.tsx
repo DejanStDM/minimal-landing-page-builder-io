@@ -114,6 +114,7 @@ export function Navigation({ className = "" }: NavigationProps) {
               type="secondary"
               size="small"
               className="navigation__login-btn"
+              href="#"
               onClick={closeMobileMenu}
             >
               Login
@@ -122,6 +123,7 @@ export function Navigation({ className = "" }: NavigationProps) {
               type="primary"
               size="small"
               className="navigation__signup-btn"
+              href="#"
               onClick={closeMobileMenu}
             >
               Sign up
@@ -134,6 +136,7 @@ export function Navigation({ className = "" }: NavigationProps) {
             type="secondary"
             size="small"
             className="navigation__login-btn"
+            href="#"
           >
             Login
           </Button>
@@ -141,6 +144,7 @@ export function Navigation({ className = "" }: NavigationProps) {
             type="primary"
             size="small"
             className="navigation__signup-btn"
+            href="#"
           >
             Sign up
           </Button>

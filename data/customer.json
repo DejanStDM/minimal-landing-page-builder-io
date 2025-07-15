@@ -3,5 +3,6 @@
   "customerName": "Tim Smith",
   "organization": "British Dragon Boat Racing Association",
   "customerImage": "https://cdn.builder.io/api/v1/image/assets/TEMP/e8ed796f03d4754067b69d223deb1bcbf55094c9?width=652",
-  "meetAllCustomersText": "Meet all customers"
+  "meetAllCustomersText": "Meet all customers",
+  "meetAllCustomersUrl": "#"
 }

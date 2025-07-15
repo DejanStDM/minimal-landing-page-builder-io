@@ -1,5 +1,6 @@
 import React from "react";
 import footerData from "../../data/footer.json";
+import { Button, ArrowRightIcon } from "./Button";
 
 export function Footer({ className = "" }: { className?: string }) {
   const { callToAction, companyInfo, socialLinks, links } = footerData as {
@@ -113,23 +114,9 @@ export function Footer({ className = "" }: { className?: string }) {
         <div className="sec__container">
           <div className="footer__cta-content">
             <h2 className="footer__cta-title">{callToAction.title}</h2>
-            <button className="footer__cta-button">
-              <span>{callToAction.buttonText}</span>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.2502 11.0002L13.7199 8.53051C14.0129 8.23761 14.0129 7.76272 13.7199 7.46982L11.2502 5.00009M13.5003 8.00017L2.5 8.00017"
-                  stroke="white"
-                  strokeWidth="1.1"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </button>
+            <Button type="primary" size="normal" href="#" iconRight={<ArrowRightIcon />}> 
+             {callToAction.buttonText}
+            </Button>
           </div>
         </div>
       </div>
