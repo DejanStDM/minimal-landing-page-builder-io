@@ -136,16 +136,15 @@ export default function TabsPage() {
 
   return (
     <div className="design-system-page">
-      <div className="design-system-page__header">
-        <h1 className="design-system-page__title">Tabs</h1>
-        <p className="design-system-page__description">
-          Tab navigation components for organizing content into separate views.
-          Supports horizontal and vertical layouts, different sizes, and various
-          styles.
-        </p>
-      </div>
-
-      <div className="design-system-page__content">
+      <div className="design-system-container">
+        <header className="design-system-header">
+          <h1 className="design-system-title">Tabs</h1>
+          <p className="design-system-description">
+            Tab navigation components for organizing content into separate
+            views. Supports horizontal and vertical layouts, different sizes,
+            and various styles.
+          </p>
+        </header>
         {/* Basic Horizontal Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section__title">
