@@ -6,6 +6,7 @@ const pages = [
   { name: "Colors", path: "/design-system/colors" },
   { name: "Typography", path: "/design-system/typography" },
   { name: "Buttons", path: "/design-system/buttons" },
+  { name: "Tabs", path: "/design-system/tabs" },
   { name: "Effects", path: "/design-system/effects" },
   { name: "Icons", path: "/design-system/icons" },
 ];
