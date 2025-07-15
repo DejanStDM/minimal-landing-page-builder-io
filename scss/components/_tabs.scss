@@ -1,0 +1,365 @@
+@use "../utils" as utils;
+
+// ==========================================================================
+// TABS COMPONENT
+// ==========================================================================
+
+.tabs {
+  display: flex;
+  font-family: "Inter", sans-serif;
+
+  // Horizontal layout (default)
+  &--horizontal {
+    flex-direction: column;
+  }
+
+  // Vertical layout
+  &--vertical {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  // Centered tabs
+  &--centered {
+    .tabs__list {
+      justify-content: center;
+    }
+  }
+}
+
+// Tab list container
+.tabs__list {
+  display: flex;
+  position: relative;
+
+  // Horizontal list
+  &--horizontal {
+    flex-direction: row;
+    border-bottom: 1px solid var(--Neutral-Silver);
+
+    &.tabs__list--centered {
+      justify-content: center;
+    }
+  }
+
+  // Vertical list
+  &--vertical {
+    flex-direction: column;
+    border-right: 1px solid var(--Neutral-Silver);
+    min-width: 200px;
+    margin-right: utils.$spacing-lg;
+
+    @media (max-width: utils.$breakpoint-tablet) {
+      min-width: 150px;
+      margin-right: utils.$spacing-md;
+    }
+  }
+
+  // Line type (default)
+  &--line {
+    background: transparent;
+  }
+
+  // Card type
+  &--card {
+    background: var(--Neutral-Silver);
+    border-radius: utils.$border-radius-sm;
+    padding: 4px;
+
+    &.tabs__list--horizontal {
+      border-bottom: none;
+    }
+
+    &.tabs__list--vertical {
+      border-right: none;
+    }
+  }
+}
+
+// Individual tab button
+.tabs__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: utils.$spacing-sm;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  font-family: inherit;
+  position: relative;
+
+  &:focus {
+    outline: 2px solid var(--Primary-M_Blue);
+    outline-offset: 2px;
+    border-radius: utils.$border-radius-sm;
+  }
+
+  // Line type styling
+  &--line {
+    color: var(--Neutral-D_Grey);
+    border-radius: 0;
+
+    &:hover:not(.tabs__tab--disabled) {
+      color: var(--Brand-Primary);
+    }
+
+    &.tabs__tab--active {
+      color: var(--Brand-Primary);
+      font-weight: 500;
+
+      // Active indicator for horizontal tabs
+      .tabs--horizontal & {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background: var(--Brand-Primary);
+          border-radius: 1px;
+        }
+      }
+
+      // Active indicator for vertical tabs
+      .tabs--vertical & {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: -1px;
+          width: 2px;
+          background: var(--Brand-Primary);
+          border-radius: 1px;
+        }
+      }
+    }
+  }
+
+  // Card type styling
+  &--card {
+    border-radius: utils.$border-radius-sm;
+    color: var(--Neutral-D_Grey);
+
+    &:hover:not(.tabs__tab--disabled) {
+      background: var(--Neutral-White);
+      color: var(--Brand-Primary);
+    }
+
+    &.tabs__tab--active {
+      background: var(--Neutral-White);
+      color: var(--Brand-Primary);
+      font-weight: 500;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // Disabled state
+  &--disabled {
+    color: var(--Neutral-Grey_Blue) !important;
+    cursor: not-allowed !important;
+
+    &:hover {
+      background: none !important;
+    }
+  }
+
+  // Size variants
+  &--small {
+    padding: utils.$spacing-sm utils.$spacing-md;
+    font-size: 14px;
+    line-height: 20px;
+
+    .tabs__tab-icon {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &--medium {
+    padding: 12px utils.$spacing-md;
+    font-size: 16px;
+    line-height: 24px;
+
+    .tabs__tab-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (max-width: utils.$breakpoint-mobile) {
+      padding: utils.$spacing-sm 12px;
+      font-size: 14px;
+    }
+  }
+
+  &--large {
+    padding: utils.$spacing-md utils.$spacing-lg;
+    font-size: 18px;
+    line-height: 28px;
+
+    .tabs__tab-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: utils.$breakpoint-tablet) {
+      padding: 12px utils.$spacing-md;
+      font-size: 16px;
+    }
+
+    @media (max-width: utils.$breakpoint-mobile) {
+      padding: utils.$spacing-sm 12px;
+      font-size: 14px;
+    }
+  }
+}
+
+// Tab icon
+.tabs__tab-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Tab label
+.tabs__tab-label {
+  flex: 1;
+}
+
+// Tab badge
+.tabs__tab-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--Neutral-White);
+  background: var(--Action-Error);
+  border-radius: 10px;
+  margin-left: 4px;
+
+  // Small size adjustments
+  .tabs__tab--small & {
+    min-width: 16px;
+    height: 16px;
+    font-size: 10px;
+    padding: 0 4px;
+    border-radius: 8px;
+  }
+}
+
+// Tab content area
+.tabs__content {
+  flex: 1;
+  min-height: 0; // Allow content to shrink
+
+  .tabs--vertical & {
+    padding-left: utils.$spacing-lg;
+
+    @media (max-width: utils.$breakpoint-tablet) {
+      padding-left: utils.$spacing-md;
+    }
+  }
+
+  .tabs--horizontal & {
+    padding-top: utils.$spacing-lg;
+
+    @media (max-width: utils.$breakpoint-mobile) {
+      padding-top: utils.$spacing-md;
+    }
+  }
+}
+
+// Tab panel
+.tabs__panel {
+  width: 100%;
+  animation: fadeIn 0.2s ease;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Individual tab pane (when using TabPane components)
+.tabs__pane {
+  // Empty by default, can be styled as needed
+}
+
+// Responsive behavior for vertical tabs
+@media (max-width: utils.$breakpoint-tablet) {
+  .tabs--vertical {
+    flex-direction: column;
+
+    .tabs__list--vertical {
+      flex-direction: row;
+      border-right: none;
+      border-bottom: 1px solid var(--Neutral-Silver);
+      min-width: auto;
+      margin-right: 0;
+      margin-bottom: utils.$spacing-md;
+      overflow-x: auto;
+
+      .tabs__tab {
+        flex-shrink: 0;
+
+        &::after {
+          // Switch to bottom indicator for responsive vertical tabs
+          .tabs--vertical & {
+            top: auto;
+            bottom: -1px;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+          }
+        }
+      }
+    }
+
+    .tabs__content {
+      padding-left: 0;
+      padding-top: utils.$spacing-md;
+    }
+  }
+}
+
+// Animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Scrollable tabs for overflow
+.tabs__list--horizontal {
+  overflow-x: auto;
+  scrollbar-width: none; // Firefox
+  -ms-overflow-style: none; // IE/Edge
+
+  &::-webkit-scrollbar {
+    display: none; // Chrome/Safari
+  }
+
+  @media (max-width: utils.$breakpoint-mobile) {
+    .tabs__tab {
+      flex-shrink: 0;
+    }
+  }
+}

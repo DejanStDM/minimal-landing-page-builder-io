@@ -12,6 +12,21 @@ const nextConfig = {
       config.watchOptions = {
         poll: 1000,
         aggregateTimeout: 300,
+        ignored: /node_modules/,
+      };
+
+      // Disable webpack's HMR runtime in case of conflicts
+      config.optimization = {
+        ...config.optimization,
+        moduleIds: "named",
+      };
+
+      // Add fallback for node modules
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
       };
     }
 
@@ -20,6 +35,9 @@ const nextConfig = {
 
   // Improve development server stability
   experimental: {},
+
+  // Disable React strict mode to prevent HMR conflicts
+  reactStrictMode: false,
 
   // Headers to handle CORS properly
   async headers() {
