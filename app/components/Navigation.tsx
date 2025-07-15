@@ -66,7 +66,12 @@ const CloseIcon = () => (
 
 const NexcentLogo = () => (
   <a href="/" className="navigation__logo">
-    <img src="/images/Logo.png" alt="Logo" className="navigation__logo-img" style={{ height: 40 }} />
+    <img
+      src="/images/Logo.png"
+      alt="Logo"
+      className="navigation__logo-img"
+      style={{ height: 40 }}
+    />
   </a>
 );
 
@@ -75,6 +80,7 @@ export function Navigation({ className = "" }: NavigationProps) {
 
   const menuItems = [
     { label: "Design System", href: "/design-system" },
+    { label: "Tabs", href: "/design-system/tabs" },
     { label: "Service", href: "#" },
     { label: "Feature", href: "#" },
     { label: "Product", href: "#" },
