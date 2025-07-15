@@ -51,8 +51,8 @@
       object-fit: contain;
 
       @media (max-width: utils.$breakpoint-mobile) {
-        width: 28px;
-        height: 19px;
+       width: auto;
+        height: 19px !important;
       }
     }
 

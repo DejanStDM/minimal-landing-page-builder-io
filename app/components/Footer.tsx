@@ -185,6 +185,7 @@ export function Footer({ className = "" }: { className?: string }) {
                     key={social.name}
                     href={social.url}
                     className="footer__social-link"
+                    aria-label={social.name}
                   >
                     {getSocialIcon(social.icon)}
                   </a>
@@ -233,7 +234,7 @@ export function Footer({ className = "" }: { className?: string }) {
                     placeholder={links.stayUpToDate.placeholder}
                     className="footer__input"
                   />
-                  <button className="footer__send-btn">
+                  <button className="footer__send-btn" aria-label="Send email">
                     <svg
                       width="18"
                       height="18"
