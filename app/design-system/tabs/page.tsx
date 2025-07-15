@@ -156,8 +156,7 @@ export default function TabsPage() {
             <Tabs items={basicTabs} defaultActiveKey="profile" size="medium" />
           </div>
 
-          <div className="design-system-code">
-            <pre>{`<Tabs
+                    <pre className="design-system-code">{`<Tabs
   items={[
     { key: "profile", label: "Profile", content: <ProfileContent /> },
     { key: "settings", label: "Settings", content: <SettingsContent /> },
@@ -186,8 +185,7 @@ export default function TabsPage() {
             />
           </div>
 
-          <div className="design-system-code">
-            <pre>{`<Tabs
+                    <pre className="design-system-code">{`<Tabs
   items={tabs}
   type="card"
   size="medium"
@@ -207,8 +205,7 @@ export default function TabsPage() {
             <Tabs items={iconTabs} defaultActiveKey="profile" size="medium" />
           </div>
 
-          <div className="design-system-code">
-            <pre>{`<Tabs
+                    <pre className="design-system-code">{`<Tabs
   items={[
     { 
       key: "profile", 
@@ -245,8 +242,7 @@ export default function TabsPage() {
             />
           </div>
 
-          <div className="design-system-code">
-            <pre>{`<Tabs
+                    <pre className="design-system-code">{`<Tabs
   items={tabs}
   position="vertical"
   defaultActiveKey="settings"
@@ -290,8 +286,7 @@ export default function TabsPage() {
             />
           </div>
 
-          <div className="design-system-code">
-            <pre>{`<Tabs
+                    <pre className="design-system-code">{`<Tabs
   items={tabs}
   centered
   defaultActiveKey="settings"
@@ -339,8 +334,7 @@ export default function TabsPage() {
             </div>
           </div>
 
-          <div className="design-system-code">
-            <pre>{`// Size options
+                    <pre className="design-system-code">{`// Size options
 <Tabs size="small" items={tabs} />
 <Tabs size="medium" items={tabs} />
 <Tabs size="large" items={tabs} />`}</pre>
@@ -363,8 +357,7 @@ export default function TabsPage() {
             />
           </div>
 
-          <div className="design-system-code">
-            <pre>{`<Tabs
+                    <pre className="design-system-code">{`<Tabs
   items={[
     { key: "active", label: "Active Tab", content: <Content /> },
     { key: "disabled", label: "Disabled Tab", content: <Content />, disabled: true },
@@ -390,8 +383,7 @@ export default function TabsPage() {
             />
           </div>
 
-          <div className="design-system-code">
-            <pre>{`const [activeTab, setActiveTab] = useState("tab1");
+                    <pre className="design-system-code">{`const [activeTab, setActiveTab] = useState("tab1");
 
 <Tabs
   items={tabs}
