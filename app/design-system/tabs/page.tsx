@@ -148,7 +148,7 @@ export default function TabsPage() {
         {/* Basic Horizontal Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Basic Horizontal Tabs</h2>
-          <p className="design-system-section__description">
+          <p className="design-system-section-description">
             Standard horizontal tab navigation with line-style indicators.
           </p>
 
@@ -173,7 +173,7 @@ export default function TabsPage() {
         {/* Card Style Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Card Style Tabs</h2>
-          <p className="design-system-section__description">
+          <p className="design-system-section-description">
             Card-style tabs with background and shadow effects.
           </p>
 
@@ -199,7 +199,7 @@ export default function TabsPage() {
         {/* Tabs with Icons */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Tabs with Icons</h2>
-          <p className="design-system-section__description">
+          <p className="design-system-section-description">
             Enhanced tabs with icons and badges for better visual communication.
           </p>
 
@@ -231,7 +231,7 @@ export default function TabsPage() {
         {/* Vertical Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Vertical Tabs</h2>
-          <p className="design-system-section__description">
+          <p className="design-system-section-description">
             Vertical tab layout for sidebar-style navigation. Automatically
             switches to horizontal on mobile.
           </p>
@@ -258,7 +258,7 @@ export default function TabsPage() {
         {/* Vertical Card Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Vertical Card Tabs</h2>
-          <p className="design-system-section__description">
+          <p className="design-system-section-description">
             Vertical tabs with card styling for a more prominent sidebar
             navigation.
           </p>
@@ -277,7 +277,7 @@ export default function TabsPage() {
         {/* Centered Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Centered Tabs</h2>
-          <p className="design-system-section__description">
+          <p className="design-system-section-description">
             Horizontally centered tab navigation for balanced layouts.
           </p>
 
@@ -302,7 +302,7 @@ export default function TabsPage() {
         {/* Size Variants */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Size Variants</h2>
-          <p className="design-system-section__description">
+          <p className="design-system-section-description">
             Different sizes for various use cases and design requirements.
           </p>
 
@@ -350,7 +350,7 @@ export default function TabsPage() {
         {/* Disabled Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Disabled State</h2>
-          <p className="design-system-section__description">
+          <p className="design-system-section-description">
             Tabs can be disabled to prevent interaction while maintaining visual
             context.
           </p>
@@ -376,7 +376,7 @@ export default function TabsPage() {
         {/* Controlled Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Controlled Tabs</h2>
-          <p className="design-system-section__description">
+          <p className="design-system-section-description">
             Tabs with controlled state for advanced use cases. Current tab:{" "}
             <strong>{activeTab}</strong>
           </p>
