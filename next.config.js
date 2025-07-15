@@ -34,16 +34,10 @@ const nextConfig = {
   },
 
   // Improve development server stability
-  experimental: {
-    // Disable strict mode to prevent HMR conflicts
-    reactStrictMode: false,
-  },
+  experimental: {},
 
-  // Development server configuration
-  devServer: {
-    hot: true,
-    liveReload: false,
-  },
+  // Disable React strict mode to prevent HMR conflicts
+  reactStrictMode: false,
 
   // Headers to handle CORS properly
   async headers() {
