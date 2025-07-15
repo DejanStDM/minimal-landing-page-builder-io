@@ -34,7 +34,7 @@ export function Hero({ className = "" }: HeroProps) {
   const showPagination = slides.length > 1;
   
   return (
-    <section className={`hero ${className}`}>
+    <section className={`hero section__spacing-bottom ${className}`}>
     <div className="sec__container">
     <Swiper
     modules={[Pagination]}

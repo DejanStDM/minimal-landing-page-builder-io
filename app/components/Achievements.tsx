@@ -1,4 +1,6 @@
+import React from "react";
 import achievementsData from "../../data/achievements.json";
+import { SectionHeader } from "./SectionHeader";
 
 export interface AchievementStat {
   icon: string;
@@ -14,17 +16,10 @@ export function Achievements({ className = "" }: { className?: string }) {
   };
 
   return (
-    <section className={`achievements__sec sec ${className}`}>
+    <section className={`achievements__sec sec section__spacing-top section__spacing-bottom ${className}`}>
       <div className="sec__container">
         <div className="achievements">
-          <div className="achievements__content">
-            <h2 className="headline-2 sec__title achievements__title">
-              Helping a local <span>business reinvent itself</span>
-            </h2>
-            <p className="body-2-regular achievements__description">
-              {description}
-            </p>
-          </div>
+          <SectionHeader title={title} subtitle={description} className="achievements__header" />
           <div className="achievements__stats">
             <div className="achievements__stats-row">
               {stats.slice(0, 2).map((stat, idx) => (
@@ -42,8 +37,8 @@ export function Achievements({ className = "" }: { className?: string }) {
               ))}
             </div>
             <div className="achievements__stats-row">
-              {stats.slice(2, 4).map((stat, idx) => (
-                <div className="achievements__stat" key={idx + 2}>
+              {stats.slice(2).map((stat, idx) => (
+                <div className="achievements__stat" key={idx}>
                   <div className="achievements__stat-icon">
                     <img src={stat.icon} alt={`${stat.label} icon`} />
                   </div>

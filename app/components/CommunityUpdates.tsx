@@ -1,6 +1,7 @@
 import React from "react";
 import communityUpdatesData from "../../data/communityUpdates.json";
 import { Link } from "./Button";
+import { SectionHeader } from "./SectionHeader";
 
 export function CommunityUpdates({ className = "" }: { className?: string }) {
   const { sectionTitle, description, articles } = communityUpdatesData as {
@@ -16,14 +17,9 @@ export function CommunityUpdates({ className = "" }: { className?: string }) {
   };
 
   return (
-    <section className={`community-updates ${className}`}>
+    <section className={`community-updates section__spacing-top section__spacing-bottom ${className}`}>
       <div className="sec__container">
-        <div className="community-updates__header">
-          <h2 className="community-updates__title headline-2">
-            {sectionTitle}
-          </h2>
-          <p className="community-updates__description">{description}</p>
-        </div>
+        <SectionHeader title={sectionTitle} subtitle={description} className="community-updates__header" />
         <div className="community-updates__grid">
           {articles.map((article) => (
             <div key={article.id} className="community-updates__card">

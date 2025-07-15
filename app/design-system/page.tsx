@@ -8,6 +8,7 @@ const pages = [
   { name: "Buttons", path: "/design-system/buttons" },
   { name: "Tabs", path: "/design-system/tabs" },
   { name: "Effects", path: "/design-system/effects" },
+  { name: "FAQ", path: "/design-system/faq" },
   { name: "Icons", path: "/design-system/icons" },
 ];
 
@@ -33,7 +34,7 @@ export default function DesignSistemHome() {
         </p>
       </div>
 
-      <div
+      <div className="design-system-grid"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
@@ -65,6 +66,7 @@ export default function DesignSistemHome() {
               {page.name === "Buttons" && "Interactive button components"}
               {page.name === "Tabs" && "Tab navigation components"}
               {page.name === "Effects" && "Visual effects and animations"}
+              {page.name === "FAQ" && "Accordion for frequently asked questions"}
               {page.name === "Icons" && "Icon library and usage"}
             </p>
             <Button

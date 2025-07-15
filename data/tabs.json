@@ -1,0 +1,17 @@
+[
+  {
+    "key": "1",
+    "label": "Overview",
+    "content": "This is the overview tab content.\n\nWelcome to the overview section! Here you can find a summary of the main features and benefits.\n\n- Fast setup\n- Modern design\n- Easy customization\n\nGet started by exploring the other tabs."
+  },
+  {
+    "key": "2",
+    "label": "Features",
+    "content": "Here are some features listed in the features tab.\n\n1. Drag & drop builder\n2. Responsive layouts\n3. Built-in analytics\n4. SEO optimization\n\nFor more details, check our documentation."
+  },
+  {
+    "key": "3",
+    "label": "Pricing",
+    "content": "Pricing details are shown in this tab.\n\n- Free: Basic features\n- Pro: $19/month, advanced integrations\n- Enterprise: Custom pricing, priority support\n\nContact us for a custom quote!"
+  }
+] 

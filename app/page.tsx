@@ -7,6 +7,8 @@ import { UnlockFooter } from "./components/UnlockFooter";
 import { Customer } from "./components/Customer";
 import { CommunityUpdates } from "./components/CommunityUpdates";
 import { Footer } from "./components/Footer";
+import { TabsSection } from "./components/TabsSection";
+import { FAQSection } from "./components/FAQSection";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Hero />
       <Clients />
       <Community />
+      <TabsSection />
+      <FAQSection />
       <Unlock />
       <Achievements />
       <UnlockFooter />
