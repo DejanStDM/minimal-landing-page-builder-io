@@ -145,7 +145,7 @@ export default function TabsPage() {
             and various styles.
           </p>
         </header>
-        {/* Basic Horizontal Tabs */}
+
         <section className="design-system-section">
           <h2 className="design-system-section-title">Basic Horizontal Tabs</h2>
           <p className="design-system-section-description">
@@ -156,7 +156,7 @@ export default function TabsPage() {
             <Tabs items={basicTabs} defaultActiveKey="profile" size="medium" />
           </div>
 
-                    <pre className="design-system-code">{`<Tabs
+          <pre className="design-system-code">{`<Tabs
   items={[
     { key: "profile", label: "Profile", content: <ProfileContent /> },
     { key: "settings", label: "Settings", content: <SettingsContent /> },
@@ -166,10 +166,8 @@ export default function TabsPage() {
   defaultActiveKey="profile"
   size="medium"
 />`}</pre>
-          </div>
         </section>
 
-        {/* Card Style Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Card Style Tabs</h2>
           <p className="design-system-section-description">
@@ -185,16 +183,14 @@ export default function TabsPage() {
             />
           </div>
 
-                    <pre className="design-system-code">{`<Tabs
+          <pre className="design-system-code">{`<Tabs
   items={tabs}
   type="card"
   size="medium"
   defaultActiveKey="settings"
 />`}</pre>
-          </div>
         </section>
 
-        {/* Tabs with Icons */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Tabs with Icons</h2>
           <p className="design-system-section-description">
@@ -205,7 +201,7 @@ export default function TabsPage() {
             <Tabs items={iconTabs} defaultActiveKey="profile" size="medium" />
           </div>
 
-                    <pre className="design-system-code">{`<Tabs
+          <pre className="design-system-code">{`<Tabs
   items={[
     { 
       key: "profile", 
@@ -222,10 +218,8 @@ export default function TabsPage() {
     },
   ]}
 />`}</pre>
-          </div>
         </section>
 
-        {/* Vertical Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Vertical Tabs</h2>
           <p className="design-system-section-description">
@@ -242,16 +236,14 @@ export default function TabsPage() {
             />
           </div>
 
-                    <pre className="design-system-code">{`<Tabs
+          <pre className="design-system-code">{`<Tabs
   items={tabs}
   position="vertical"
   defaultActiveKey="settings"
   size="medium"
 />`}</pre>
-          </div>
         </section>
 
-        {/* Vertical Card Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Vertical Card Tabs</h2>
           <p className="design-system-section-description">
@@ -270,7 +262,6 @@ export default function TabsPage() {
           </div>
         </section>
 
-        {/* Centered Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Centered Tabs</h2>
           <p className="design-system-section-description">
@@ -286,15 +277,13 @@ export default function TabsPage() {
             />
           </div>
 
-                    <pre className="design-system-code">{`<Tabs
+          <pre className="design-system-code">{`<Tabs
   items={tabs}
   centered
   defaultActiveKey="settings"
 />`}</pre>
-          </div>
         </section>
 
-        {/* Size Variants */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Size Variants</h2>
           <p className="design-system-section-description">
@@ -334,14 +323,12 @@ export default function TabsPage() {
             </div>
           </div>
 
-                    <pre className="design-system-code">{`// Size options
+          <pre className="design-system-code">{`// Size options
 <Tabs size="small" items={tabs} />
 <Tabs size="medium" items={tabs} />
 <Tabs size="large" items={tabs} />`}</pre>
-          </div>
         </section>
 
-        {/* Disabled Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Disabled State</h2>
           <p className="design-system-section-description">
@@ -357,16 +344,14 @@ export default function TabsPage() {
             />
           </div>
 
-                    <pre className="design-system-code">{`<Tabs
+          <pre className="design-system-code">{`<Tabs
   items={[
     { key: "active", label: "Active Tab", content: <Content /> },
     { key: "disabled", label: "Disabled Tab", content: <Content />, disabled: true },
   ]}
 />`}</pre>
-          </div>
         </section>
 
-        {/* Controlled Tabs */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Controlled Tabs</h2>
           <p className="design-system-section-description">
@@ -383,22 +368,20 @@ export default function TabsPage() {
             />
           </div>
 
-                    <pre className="design-system-code">{`const [activeTab, setActiveTab] = useState("tab1");
+          <pre className="design-system-code">{`const [activeTab, setActiveTab] = useState("tab1");
 
 <Tabs
   items={tabs}
   activeKey={activeTab}
   onChange={setActiveTab}
 />`}</pre>
-          </div>
         </section>
 
-        {/* Usage Guidelines */}
         <section className="design-system-section">
           <h2 className="design-system-section-title">Usage Guidelines</h2>
 
           <div className="design-system-guidelines">
-            <div className="design-system-guideline">
+            <div className="design-system-guidelines-item">
               <h3>When to Use</h3>
               <ul>
                 <li>Organizing related content into separate views</li>
@@ -408,7 +391,7 @@ export default function TabsPage() {
               </ul>
             </div>
 
-            <div className="design-system-guideline">
+            <div className="design-system-guidelines-item">
               <h3>Layout Choice</h3>
               <ul>
                 <li>
@@ -426,7 +409,7 @@ export default function TabsPage() {
               </ul>
             </div>
 
-            <div className="design-system-guideline">
+            <div className="design-system-guidelines-item">
               <h3>Accessibility</h3>
               <ul>
                 <li>Tabs support keyboard navigation (Tab, Arrow keys)</li>
@@ -436,7 +419,7 @@ export default function TabsPage() {
               </ul>
             </div>
 
-            <div className="design-system-guideline">
+            <div className="design-system-guidelines-item">
               <h3>Best Practices</h3>
               <ul>
                 <li>Keep tab labels short and descriptive</li>
