@@ -63,6 +63,7 @@ export default function DesignSistemHome() {
               {page.name === "Colors" && "Color palette and usage"}
               {page.name === "Typography" && "Text styles and hierarchy"}
               {page.name === "Buttons" && "Interactive button components"}
+              {page.name === "Tabs" && "Tab navigation components"}
               {page.name === "Effects" && "Visual effects and animations"}
               {page.name === "Icons" && "Icon library and usage"}
             </p>
