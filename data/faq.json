@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "question": "What is Builder.io and how does it work?",
+    "answer": "Builder.io is a visual development platform that enables teams to build and optimize digital experiences without traditional coding. It provides a drag-and-drop interface for creating websites, landing pages, and applications while generating clean, production-ready code."
+  },
+  {
+    "id": "2",
+    "question": "How do I get started with Builder.io?",
+    "answer": "Getting started is simple! Sign up for a free account, choose a template or start from scratch, use our visual editor to design your pages, integrate with your existing tech stack, and publish your content. Our documentation and tutorials will guide you through each step."
+  },
+  {
+    "id": "3",
+    "question": "What frameworks and technologies does Builder.io support?",
+    "answer": "Builder.io supports a wide range of modern frameworks including React, Next.js, Vue.js, Angular, Svelte, and more. We also provide APIs and SDKs for custom integrations, making it easy to incorporate Builder into your existing development workflow."
+  },
+  {
+    "id": "4",
+    "question": "Is Builder.io suitable for enterprise-level projects?",
+    "answer": "Absolutely! Builder.io is designed to scale with your business needs. We offer enterprise features including advanced collaboration tools, custom roles and permissions, white-label solutions, dedicated support, and enterprise-grade security and compliance."
+  },
+  {
+    "id": "5",
+    "question": "What kind of support is available?",
+    "answer": "We provide comprehensive support including detailed documentation, video tutorials, community forums, email support, and live chat. Enterprise customers also get access to dedicated success managers and priority support channels."
+  },
+  {
+    "id": "6",
+    "question": "Can I use Builder.io with my existing content management system?",
+    "answer": "Yes! Builder.io can work alongside your existing CMS or replace it entirely. We offer integrations with popular platforms like WordPress, Shopify, Contentful, and others. You can also use our APIs to create custom integrations with any system."
+  }
+]
